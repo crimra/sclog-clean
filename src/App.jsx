@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Header from './components/Header'
 
 import { Routes, Route } from 'react-router-dom'
+
 import Home from './components/pages/Home'
 import Logistique from './components/pages/Logistique'
 import Rse from './components/pages/Rse'
@@ -15,7 +16,7 @@ function App() {
   return (
     <>
      <Header />
-     
+
      <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/logistique' element={<Logistique />}/>
