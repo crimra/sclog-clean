@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import Rejoindre from './pages/Rejoindre'
 
 const Header = () => {
   return (
@@ -9,15 +11,18 @@ const Header = () => {
 
         <nav>
             <ul>
-                <li><a href="#">Acceuil</a></li>
+                <li><Link to={"/"}>Acceuil</Link></li>
                 <li><a href="#">Présentation</a></li>
                 <li><a href="#">H3SE</a></li>
                 <li><a href="#">Projects</a></li>
 
-                <li><a href="#">Logistique Petrolière</a></li>
-                <li><a href="#">RSE</a></li>
-                <li><a href="#">Nous Rejoindre</a></li>
-                <li><a href="#">Actualité</a></li>
+
+                <li><Link to={'/logistique'}>Logistique Petrolière</Link></li>
+                
+                <li><Link to={'/rse'}>RSE</Link></li>
+                <li><Link to={'/rejoindre'}>Nous Rejoindre</Link></li>
+                <li><Link to={'/news'}>Actualité</Link></li>
+
             </ul>
         </nav>
 
