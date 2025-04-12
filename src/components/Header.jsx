@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header>
+    <header className='outfit'>
         <span className='logo'>
             <img src="src/assets/logo1.png" alt="sclog logo" />
         </span>
@@ -13,8 +13,8 @@ const Header = () => {
                 <li><a href="#">Présentation</a></li>
                 <li><a href="#">H3SE</a></li>
                 <li><a href="#">Projects</a></li>
+
                 <li><a href="#">Logistique Petrolière</a></li>
-                
                 <li><a href="#">RSE</a></li>
                 <li><a href="#">Nous Rejoindre</a></li>
                 <li><a href="#">Actualité</a></li>
