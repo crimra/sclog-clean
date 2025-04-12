@@ -7,6 +7,61 @@
 body{
   font-family: Helvetica, serif;
 }
+/* Police */
+
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.jost{
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+/* End Police */
+
+/* Title style */
+
+.title1{
+  font-size: 20px;
+  color: #1F458E;
+  position: relative;
+}
+
+.title1::before{
+  content: '';
+  width: 12%;
+  height: 1px;
+  background-color: #1F458E;
+  position: absolute;
+  top: 100%;
+}
+
+.title2{
+  font-size: 32px;
+  color: #1F458E;
+  position: relative;
+  font-weight: bold;
+  margin: 30px 0 90px 0;
+  width: 50%;
+}
+
+.title2::before{
+  content: '';
+  width: 90%;
+  height: 1px;
+  background-color: #020101;
+  opacity: 8%;
+  position: absolute;
+  top: 100%;
+}
+
+/* End Title style */
 
 /* Header */
 
@@ -21,8 +76,6 @@ header{
   gap: 5rem;
   position: sticky;
   top: 0;
-
-
 }
 
 .logo{
@@ -67,7 +120,6 @@ nav ul li a:hover{
   border: none;
   outline: none;
   padding: 8px;
-  
   font-size: 1rem;
 }
 
@@ -84,55 +136,43 @@ nav ul li a:hover{
 
 /*  Tabs  */
 
+.about{
+  margin: 5rem 20rem;
+}
+
 .tabs{
-  
-  margin: 22px auto ;
-  max-width: 800px;
-  padding: 4rem;
-  border: 1px solid rgba(0, 0, 0, 0.26);
-  border-radius: 7px;
+
 }
 
 .tabs .tabs-header{
   display: flex;
-  align-content: center;
-  justify-content: center;
-  gap: 5rem;
-}
-
-.tab-item{
-  padding: 5px 1rem;
-  border-radius: 5px;
+  
 }
 
 .tabs .card{
-  padding: 3rem;
   display: none;
 }
 
-.tabs .card-content{
-  display: flex;
-  gap: 4rem;
+.tab-item{
+  cursor: pointer;
+  margin: .2rem; 
+}
+.tab-header-text p{
+  min-width: 100%;
+  margin-top: 1rem;
 }
 
-.card-content p{
-  width: 40%;
+.img-container{
+  width: 250px;
+  width: 250px;
 }
-.card-content .img-container{
-
-  width: 200px;
-  height: 200px;
-  display: flex;
-  
-}
-
 .img-container .img{
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  
 }
 
 .active{
-  border-bottom: 2px solid #101013;
+  color: #1F458E;
+  opacity: 100%;
+  text-decoration-line: underline;
 }

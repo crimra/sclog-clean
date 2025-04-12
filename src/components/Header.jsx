@@ -4,7 +4,7 @@ import Rejoindre from './pages/Rejoindre'
 
 const Header = () => {
   return (
-    <header>
+    <header className='outfit'>
         <span className='logo'>
             <img src="src/assets/logo1.png" alt="sclog logo" />
         </span>
@@ -22,6 +22,7 @@ const Header = () => {
                 <li><Link to={'/rse'}>RSE</Link></li>
                 <li><Link to={'/rejoindre'}>Nous Rejoindre</Link></li>
                 <li><Link to={'/news'}>Actualité</Link></li>
+
             </ul>
         </nav>
 
