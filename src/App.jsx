@@ -8,6 +8,7 @@ import Logistique from './components/pages/Logistique'
 import Rse from './components/pages/Rse'
 import Rejoindre from './components/pages/Rejoindre'
 import News from './components/pages/News'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
         <Route path='/rejoindre' element={<Rejoindre />}/>
         <Route path='/news' element={<News />}/>
      </Routes>
+
+     <Footer />
      
     </>
   )

@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className='outfit'>
         <span className='logo'>
-            <img src="src/assets/logo1.png" alt="sclog logo" />
+            <Link to={"/"}><img src="src/assets/logo1.png" alt="sclog logo" /></Link>
         </span>
 
         <nav>

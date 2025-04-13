@@ -256,3 +256,25 @@ nav ul li a:hover{
 }
 
 /* end news */
+
+
+/* footer */
+
+footer{
+  background-color: #1F458E;
+  color: #fff;
+  padding: 3rem 10rem;
+}
+
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+footer .bottom{
+  margin-top: 5rem;
+  text-align: center;
+}
+
+/* end footer */
