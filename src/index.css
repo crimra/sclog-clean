@@ -203,7 +203,7 @@ nav ul li a:hover{
   display: flex;
   flex-direction: column;
   position: absolute;
-  transform: translateX(30%);
+  transform: translateX(18rem);
   padding-top: 12%;
   background-color: #737373;
   height: 70vh;
