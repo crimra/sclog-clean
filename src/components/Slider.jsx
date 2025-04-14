@@ -1,7 +1,6 @@
 import React from 'react'
-import { useState, useEffect, useRef } from 'react';
 
-const Slider = ({ images }) => {
+const Slider = ({ }) => {
   const sliderTrack = document.querySelector('.slider-track');
   const slides = document.querySelectorAll('.slide');
   const prevBtn = document.querySelector('.prev');
@@ -9,7 +8,7 @@ const Slider = ({ images }) => {
   const slideCounters = document.querySelectorAll('.slide-counter');
   
   let currentIndex = 0;
-  const slideWidth = slides[0].clientWidth;
+  let slideWidth = slides[0].clientWidth;
 
   function updateSlider() {
       sliderTrack.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
