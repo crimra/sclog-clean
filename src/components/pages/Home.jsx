@@ -4,6 +4,7 @@ import Services from '../services/Services'
 import Slider from '../Slider';
 import Action from '../Action'
 import Banner from '../Banner'
+import Qhse from '../Qhse';
 
 const Home = () => {
   
@@ -16,6 +17,8 @@ const Home = () => {
     <Services />
     
     <Action />
+
+    <Qhse/>
     
     </>
   )
