@@ -4,7 +4,7 @@ import Rejoindre from './pages/Rejoindre'
 
 const Header = () => {
   return (
-    <header className='outfit'>
+    <header className='outfit z-50  '>
         <span className='logo'>
             <Link to={"/"}><img src="src/assets/logo1.png" alt="sclog logo" /></Link>
         </span>
