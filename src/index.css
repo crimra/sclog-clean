@@ -10,7 +10,22 @@
 body {
   font-family: "Jost", sans-serif;
   color: #56676D;
-  background-color: #eee;
+  background-color: #fff;
+}
+
+.about,
+.services,
+.action,
+.qhse,
+.logistique-section,
+.big-carte,
+.rse{
+  /* margin: 5rem 20rem; */
+  width: 80%;
+  margin: 0 auto 0 auto;
+  padding: 5rem 10rem;
+  background-color: #fff;
+
 }
 
 /* Police */
@@ -96,7 +111,7 @@ header {
 }
 
 .logo {
-  height: 80px;
+  height: 5rem;
 }
 
 .logo img {
@@ -177,17 +192,6 @@ nav ul li a:hover {
 
 /*  Tabs  */
 
-.about,
-.services,
-.action,
-.qhse {
-  /* margin: 5rem 20rem; */
-  width: 80%;
-  margin: 0 auto 0 auto;
-  padding: 5rem 10rem;
-  background-color: #eee;
-
-}
 
 .tabs .tabs-header {
   display: flex;
@@ -208,6 +212,10 @@ nav ul li a:hover {
 .tab-header-text p {
   width: 90%;
   margin-top: 1rem;
+}
+
+.tab-header-text{
+  width: 50%;
 }
 
 .img-container .img {
@@ -641,6 +649,147 @@ footer .bottom {
 /* End Qhse */
 
 
+/* logistique */
+
+
+
+.logistique-section .items{
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.logistique-section .items .item{
+  display: flex;
+  gap: 4rem;
+  justify-items: center;
+}
+
+.logistique-section .items .item:nth-child(2){
+  flex-direction:row-reverse;
+}
+
+.logistique-section .items .item p{
+  margin-top: 15%;
+  text-align: justify;
+}
+
+
+.logistique-schema .schema{
+  margin: 4rem 0;
+  background-color: #20458e;
+  width: 100%;
+  background-image: url(src/assets/schema.svg);
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-size: contain;
+  background-position: center;
+}
+
+.logistique-schema{
+  background-color: #20458e;
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+  margin: 4rem 0;
+}
+
+.logistique-schema .schema img{
+  width: 200%;
+}
+
+.logistique-schema p{
+  text-align: center;
+  color: #fff;
+  padding-top: 1rem;
+  text-transform: uppercase;
+}
+
+.logistique .carte{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.logistique .carte .carte-right img{
+  width: 10rem;
+}
+
+.logistique .carte-right{
+  display: flex;
+  width: 60%;
+  
+}
+
+.logistique .carte-right div{
+  margin-top: 43%;
+  width: 100%;
+}
+
+.logistique .carte-right p{
+  font-size: .8rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  justify-items: center;
+}
+
+
+/* End logistique */
+
+
+/* rse */
+
+.rse1 p{
+  text-align: justify;
+}
+
+.rse1-elements{
+  margin: 3rem 0 2rem 0;
+}
+
+.rse1-element{
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+  position: relative;
+}
+
+.rse1-element::before{
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #ECECEC;
+  position: absolute;
+  top: 115%;
+}
+
+.rse1-element-text{
+  width: 90%;
+}
+
+.rse1-element-text p:first-child{
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.rse1-element-img{
+  
+}
+
+.rse1-element-img img{
+  width: 3rem;
+}
+
+
+/* End rse */
+
+
+
+
+
+
+
 /* Animations */
 
 
@@ -685,5 +834,3 @@ footer .bottom {
 
 
 /* end contact-us*/
-
-
