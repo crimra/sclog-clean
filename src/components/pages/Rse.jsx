@@ -1,10 +1,12 @@
 import React from 'react'
-
+import Hero from '../Hero'
+  
 const Rse = () => {
   return (
-    <div>
-      Rse
-    </div>
+    <>
+      <Hero />
+      <h1>RSE</h1>
+    </>
   )
 }
 

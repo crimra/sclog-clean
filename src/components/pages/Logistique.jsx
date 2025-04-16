@@ -1,10 +1,13 @@
 import React from 'react'
+import Hero from '../Hero'
 
 const Logistique = () => {
   return (
-    <div>
-      Logistique
-    </div>
+    <>
+      <Hero />
+      <h1>Logistique</h1>
+      
+    </>
   )
 }
 

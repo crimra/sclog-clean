@@ -1,4 +1,5 @@
 import React from 'react'
+import MainHero from '../MainHero';
 import About from '../About'
 import Services from '../services/Services'
 import Slider from '../slider/Slider';
@@ -11,18 +12,14 @@ const Home = () => {
   
   return (
     <>
+
+    <MainHero />
     <About/>
-
     <Banner/>
-
-    <Services />
-    
+    <Services />  
     <Slider />
-
     <Action />
-
     <Qhse/>
-
     <ContactUs />
     
     </>

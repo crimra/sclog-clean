@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import NewsCard from '../news/NewsCard'
+import Hero from '../Hero'
 
 const News = () => {
 
@@ -46,7 +47,10 @@ const News = () => {
     }, [])
 
   return (
-    <section id='news-section'>
+    <>
+      <Hero />
+      <section id='news-section'>
+
         <h1 className='title2'>News</h1>
 
         <div className='news-body'>
@@ -63,7 +67,10 @@ const News = () => {
         })}
         </div>
 
-    </section>
+        </section>
+      
+    </>
+   
   )
 }
 
