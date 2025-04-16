@@ -7,13 +7,19 @@ const Rse = () => {
       <Hero />
       <section className="rse">
 
-                <div className="rse1">
+          <div className="rse1">
 
-                    
-          <p className='title2'>Notre engagement sociétal</p>
-          <p>
-            Chez SCLOG, nous croyons fermement que notre succès va de pair avec notre engagement envers la communauté et l'environnement. Nos initiatives RSE sont conçues pour contribuer positivement au développement durable et au bien-être des populations locales:
+          <div className="rse1-title">
+            
+            <p className='title2'>Notre engagement sociétal</p>
+            <p>
+              Chez SCLOG, nous croyons fermement que notre succès va de pair avec notre engagement envers la communauté et l'environnement. Nos initiatives RSE sont conçues pour contribuer positivement au développement durable et au bien-être des populations locales:
+            </p>
+            <br /><br />
+            <p>
+            Chaque action reflète notre engagement à bâtir un avenir solidaire et responsable.
           </p>
+          </div>     
 
 
           <div className="rse1-elements">
@@ -71,12 +77,7 @@ const Rse = () => {
 
           </div>
 
-          <p>
-            Chaque action reflète notre engagement à bâtir un avenir solidaire et responsable.
-          </p>
-
           </div>
-
 
       </section>
     </>
