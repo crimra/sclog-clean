@@ -4,8 +4,8 @@ const ContactUs = () => {
   return (
     <section className='contact-us'>
         <div className="flex flex-col">
-            <h3 className='title2'>Prennez contact</h3>
-            <p className=''>Vous avez un projet en tête ? Nous serions ravis d'en discuter avec vous.</p>
+            <p className='title2'>Prennez contact</p>
+            <p className=''>Vous avez un projet en tête ? <br />Nous serions ravis d'en discuter avec vous.</p>
         </div>
         <div className=''>
             <form action="" className='flex flex-col gap-2'>
