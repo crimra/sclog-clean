@@ -625,3 +625,39 @@ footer .bottom {
 
 
 /* End animations */
+
+/* contact-us */
+
+        /* à revoir */
+
+.contact-us{
+  display: flex;
+  justify-content: center;
+  gap:7rem;
+  margin: 5rem 0;
+}
+
+.contact-us form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.contact-us div input {
+  background-color: transparent;
+
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.contact-us div input:active {
+  border: none;
+  outline: none;
+}
+
+
+
+/* end contact-us*/

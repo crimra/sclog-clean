@@ -5,6 +5,7 @@ import Slider from '../slider/Slider';
 import Action from '../Action'
 import Banner from '../Banner'
 import Qhse from '../Qhse';
+import ContactUs from '../ContactUs';
 
 const Home = () => {
   
@@ -21,6 +22,8 @@ const Home = () => {
     <Action />
 
     <Qhse/>
+
+    <ContactUs />
     
     </>
   )
