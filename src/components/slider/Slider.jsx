@@ -15,7 +15,6 @@ const Slider = () => {
     setCurrent(current<slideLength-1?current + 1:0)
   }
 
-
   return (
     <section className="flex justify-center items-center relative" >
 
@@ -27,7 +26,7 @@ const Slider = () => {
             transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-100" >
                 <img src={SliderData[current].url} alt={SliderData[current].alt}/>
             </div>
-
+  
             }
 
       <FaArrowAltCircleRight className='absolute right-10 text-[50px] text-[#1F458E] cursor-pointer' onClick={nextImage}/>

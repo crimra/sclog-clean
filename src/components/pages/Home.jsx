@@ -6,6 +6,7 @@ import Slider from '../slider/Slider';
 import Action from '../Action'
 import Banner from '../Banner'
 import Qhse from '../Qhse';
+import Projects from '../Projects';
 import ContactUs from '../ContactUs';
 import useGlobalTitleAnimations from "../../hooks/useGlobalTitleAnimations";
 
@@ -21,6 +22,7 @@ const Home = () => {
     <Slider />
     <Action />
     <Qhse/>
+    <Projects />
     <ContactUs />
     
     </>

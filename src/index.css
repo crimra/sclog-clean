@@ -971,3 +971,52 @@ footer .bottom {
   animation: slideOutDown 1s cubic-bezier(0.5, 0, 0.1, 1) forwards;
 }
 
+
+/* projects */
+
+#projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 8rem;
+}
+
+#projects h3{
+  
+}
+
+#projects .content{
+  display: flex;
+  gap: 2rem;
+}
+
+#projects .content .left{
+  min-width: 40%;
+  max-height: 500px;
+  background-color: #aaa;
+}
+
+#projects .content .right{
+
+  background-color: #aaa;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 4rem;
+}
+
+#projects .content .right .card{
+  display: flex;
+  gap: 1rem;
+  width: 40%;
+}
+
+#projects .content .right .card .small-img{
+  min-width: 100px;
+  float: left;
+  background-color: #777;
+  cursor: pointer;
+}
+
+
+/* end projects */

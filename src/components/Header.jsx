@@ -14,7 +14,7 @@ const Header = () => {
                 <li><Link to={"/"}>Acceuil</Link></li>
                 <li><a href="#">Présentation</a></li>
                 <li><a href="#">H3SE</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
 
 
                 <li><Link to={'/logistique'}>Logistique Petrolière</Link></li>
