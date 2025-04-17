@@ -227,6 +227,7 @@ nav ul li a:hover {
 
 .tab-header-text{
   width: 50%;
+  text-align: justify;
 }
 
 .img-container .img {
