@@ -1,7 +1,9 @@
 import React from 'react'
 import Hero from '../Hero'
+import useGlobalTitleAnimations from "../../hooks/useGlobalTitleAnimations";
 
 const Logistique = () => {
+  useGlobalTitleAnimations();
   return (
     <>
       <Hero />
