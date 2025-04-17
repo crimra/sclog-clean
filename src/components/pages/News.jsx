@@ -10,39 +10,39 @@ const News = () => {
         setNews([
             {
                 img:'src/assets/news-img.png',
-                title:'Bani ke coder na minuit',
+                title:'Lorem ipsum dolor sit amet',
                 date:'Mai 18, 2023',
-                text: 'Ba mboutu hein ? Ba mboutu mu ke safula ngé figure na mbata. Mu tchumuna ngé dissu!'
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
             },
             {
                 img:'src/assets/news-img.png',
-                title:'Ni Beto',
+                title:'Dolor ipsum lorem sit amet',
                 date:'Aout 09, 2024',
-                text: 'Ba mboutu hein ? Ba mboutu mu ke safula ngé figure na mbata. Mu tchumuna ngé dissu!'
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
             },
             {
                 img:'src/assets/news-img.png',
-                title:'Ba mbala me ya',
+                title:'Dolor ipsum dolor sit amet',
                 date:'Mai 18, 2023',
-                text: 'Ba mboutu hein ? Ba mboutu mu ke safula ngé figure na mbata. Mu tchumuna ngé dissu!'
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
             },
             {
                 img:'src/assets/news-img.png',
-                title:'Himra ke ka zoba',
+                title:'Sit Amet Ipsum',
                 date:'Aout 09, 2024',
-                text: 'Ba mboutu hein ? Ba mboutu mu ke safula ngé figure na mbata. Mu tchumuna ngé dissu!'
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
             },
             {
                 img:'src/assets/news-img.png',
-                title:"L'homme est beau",
+                title:"Lorem Ipsum Dolor",
                 date:'Mai 18, 2023',
-                text: 'Ba mboutu hein ? Ba mboutu mu ke safula ngé figure na mbata. Mu tchumuna ngé dissu!'
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua.'
             },
             {
                 img:'src/assets/news-img.png',
-                title:'Jonny Ha liiiiii déeee',
+                title:'Tempor incididunt ut labore',
                 date:'Aout 09, 2024',
-                text: 'Ba mboutu hein ? Ba mboutu mu ke safula ngé figure na mbata. Mu tchumuna ngé dissu!'
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.!'
             },
             ])
     }, [])

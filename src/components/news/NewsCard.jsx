@@ -7,7 +7,7 @@ const NewsCard = ({img, title, date, text}) => {
         <div className='news-img'>
             <img src={img} alt="img" />
         </div>
-        <h3>{title}</h3>
+        <h3 className='font-bold'>{title}</h3>
         <div className='news-row'>
             <button>news</button>
             <span>
