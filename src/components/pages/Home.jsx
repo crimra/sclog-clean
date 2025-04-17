@@ -7,9 +7,10 @@ import Action from '../Action'
 import Banner from '../Banner'
 import Qhse from '../Qhse';
 import ContactUs from '../ContactUs';
+import useGlobalTitleAnimations from "../../hooks/useGlobalTitleAnimations";
 
 const Home = () => {
-  
+  useGlobalTitleAnimations();
   return (
     <>
 

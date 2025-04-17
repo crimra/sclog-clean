@@ -1,16 +1,72 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react';
+import 'animate.css';
 
 const Tabs = () => {
+    const [active, setActive] = React.useState(1);
+    const title1Ref = useRef(null);
+    const title2Ref = useRef(null);
 
-    const [active, setActive] = React.useState(1)
-    function toogleTab(tab){
-        setActive(tab)
+    function toogleTab(tab) {
+        setActive(tab);
     }
-  return (
-    <section className='about'>
-        <p className='title1 outfit'>A propos</p>
-        <p className='title2 outfit'>Découvrez notre histoire, notre vision et nos valeurs</p>
-        <div className='tabs jost'>
+
+    useEffect(() => {
+        // Animation pour title1 (apparition du bas vers le haut)
+        const observer1 = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                    observer1.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        if (title1Ref.current) {
+            observer1.observe(title1Ref.current);
+        }
+
+        // Animation pour title2 (apparition mot par mot de gauche à droite)
+        const observer2 = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const text = entry.target.textContent;
+                    entry.target.textContent = '';
+                    
+                    text.split(' ').forEach((word, i) => {
+                        const wordSpan = document.createElement('span');
+                        wordSpan.textContent = word;
+                        wordSpan.style.display = 'inline-block';
+                        wordSpan.style.animation = `wordAppear 0.5s ${i * 0.2}s forwards`;
+                        wordSpan.style.opacity = '0';
+                        wordSpan.style.transform = 'translateX(-20px)';
+                        entry.target.appendChild(wordSpan);
+                        
+                        // Ajouter un espace normal après chaque mot sauf le dernier
+                        if (i < text.split(' ').length - 1) {
+                            entry.target.appendChild(document.createTextNode(' '));
+                        }
+                    });
+        
+                    observer2.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        if (title2Ref.current) {
+            observer2.observe(title2Ref.current);
+        }
+
+        return () => {
+            if (title1Ref.current) observer1.unobserve(title1Ref.current);
+            if (title2Ref.current) observer2.unobserve(title2Ref.current);
+        };
+    }, []);
+
+    return (
+        <section className='about'>
+            <p ref={title1Ref} className='title1 outfit' style={{ opacity: 0 }}>A propos</p>
+            <p ref={title2Ref} className='title2 outfit'>Découvrez notre histoire, notre vision et nos valeurs</p>
+            <div className='tabs jost'>
             <div style={{"display": active==1?"block":"none" }} className="card">
                 <div className='tabs-header outfit'>
                     <div className="tab-header-text">
@@ -39,11 +95,10 @@ const Tabs = () => {
                     </div>
                 </div>
             </div>
-            
-        </div>
 
-    </section>
-  )
+            </div>
+        </section>
+    );
 }
 
-export default Tabs
+export default Tabs;

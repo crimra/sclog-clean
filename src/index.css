@@ -52,18 +52,20 @@ body {
 
 .title1 {
   font-family: "Outfit", sans-serif;
-  font-size: 20px;
-  color: #1F458E;
   position: relative;
+  font-size: 20px;
+  color: #fff;
+  z-index: 1;
 }
 
 .title1::before {
   content: '';
-  width: 12%;
-  height: 1px;
-  background-color: #1F458E;
   position: absolute;
-  top: 100%;
+  width: 6rem;
+  height: 100%;
+  background-color: #1F458E;
+  z-index: -1;
+  left: -.5rem;
 }
 
 .title2 {
@@ -225,6 +227,7 @@ nav ul li a:hover {
 
 .tab-header-text{
   width: 50%;
+  text-align: justify;
 }
 
 .img-container .img {
@@ -916,3 +919,55 @@ footer .bottom {
 
 
 /* end contact-us*/
+
+
+/* Animations personnalisées */
+@keyframes wordAppear {
+  from {
+      opacity: 0;
+      transform: translateX(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.title2 {
+  white-space: normal; /* Espacement normal */
+}
+
+.title2 span {
+  display: inline-block; /* Pour l'animation */
+}
+
+/* Pour les mots vides (espaces simples) */
+.title2 span:empty {
+  display: inline;
+  margin-right: 0.3em;
+}
+
+/* Animation pour le title1 */
+.title1.animate__fadeInUp {
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Animation pour le title2 */
+.title2 {
+  overflow: hidden;
+}
+
+.title2 span {
+  display: inline-block;
+}
+
+/* Animation de sortie (quand l'élément quitte l'écran) */
+.title1, .title2 {
+  transition: all 2s ease;
+}
+
+.title1.hide, .title2.hide {
+  animation: slideOutDown 1s cubic-bezier(0.5, 0, 0.1, 1) forwards;
+}
+
