@@ -16,7 +16,7 @@ export const SliderData = [
     },
     {
         id:3,
-        url: "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        url: "https://images.pexels.com/photos/31649624/pexels-photo-31649624/free-photo-of-bustling-urban-intersection-in-seoul-korea.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         alt: "image4"
     },
     {
