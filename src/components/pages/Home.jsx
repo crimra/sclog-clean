@@ -9,9 +9,11 @@ import Qhse from '../Qhse';
 import Projects from '../Projects';
 import ContactUs from '../ContactUs';
 import useGlobalTitleAnimations from "../../hooks/useGlobalTitleAnimations";
+import useScrollAnimations from "../../hooks/useScrollAnimations";
 
 const Home = () => {
   useGlobalTitleAnimations();
+  useScrollAnimations();
   return (
     <>
 

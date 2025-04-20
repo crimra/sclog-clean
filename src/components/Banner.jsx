@@ -12,16 +12,16 @@ const Banner = () => {
 
             <div className="banner-elements">
                 <div className="element">
-                    <img src="src/assets/banner-element1.svg" alt="" srcSet="" />
-                    <p>
+                    <img src="src/assets/banner-element1.svg" alt=""className='slide-in'/>
+                    <p className='slide-in slide-in-delay'>
                         <span>Capital humain</span>
                         <span>Plus de 130 Employés</span>
                     </p>
                 </div>
-                <div className="element"></div>
+                <div className="element slide-in"></div>
                 <div className="element">
-                <img src="src/assets/banner-element2.svg" alt="" srcSet="" />
-                    <p>
+                <img src="src/assets/banner-element2.svg" alt="" className='slide-in'/>
+                    <p className='slide-in slide-in-delay'>
                         <span>Sites</span>
                         <span>8 dépôts en activités pour un total de 97 000 m3 de capacités</span>
                     </p>

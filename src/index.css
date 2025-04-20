@@ -102,17 +102,18 @@ body {
 /* Header */
 
 header {
-  background-color: #1F458E;
   color: #FFF;
-
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-
   gap: 5rem;
   position: sticky;
   top: 0;
+  background-color: #1F458E;
+ 
 }
+
 
 .logo {
   height: 5rem;
@@ -500,6 +501,11 @@ footer .bottom {
   text-align: center;
 }
 
+footer h2{
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+
 /* end footer */
 
 /* Slider */
@@ -519,6 +525,11 @@ footer .bottom {
 
 
 /* Action */
+
+.action{
+  background-color: #d1d1d1;
+  width: 100%;
+}
 
 .chart {
   display: flex;
@@ -569,43 +580,45 @@ footer .bottom {
   left: -90%;
 }
 
+
+
 .segment {
   opacity: 0;
   transform-origin: center;
+  /* plus d’animation ici */
+}
+
+/* On n’affecte l’animation qu’aux segments
+   quand .chart a reçu la classe .animate */
+.chart.animate .segment {
   animation: appear 0.6s ease-out forwards;
 }
 
-@keyframes appear {
-  from {
-    opacity: 0;
-    transform: scale(0.5) rotate(-90deg);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1) rotate(0deg);
-  }
-}
-
-.segment:nth-child(1) {
+.chart.animate .segment:nth-child(1) {
   animation-delay: 0.2s;
 }
-
-.segment:nth-child(2) {
+.chart.animate .segment:nth-child(2) {
   animation-delay: 0.4s;
 }
-
-.segment:nth-child(3) {
+.chart.animate .segment:nth-child(3) {
   animation-delay: 0.8s;
 }
-
-.segment:nth-child(4) {
+.chart.animate .segment:nth-child(4) {
   animation-delay: 1s;
 }
-
-.segment:nth-child(5) {
-  animation-delay: 1.2s;
+.chart.animate .segment:nth-child(5) {
+  animation-delay: .8s;
 }
+
+@keyframes appear {
+  from { opacity: 0; transform: scale(0.5) rotate(-90deg); }
+  to   { opacity: 1; transform: scale(1)   rotate(0deg);    }
+}
+
+.segment.animate {
+  animation: appear 0.6s ease-out forwards;
+}
+
 
 /* End Action */
 
@@ -869,24 +882,9 @@ footer .bottom {
 
 /* End rejoindre */
 
-
-
-
-
-
-
-/* Animations */
-
-
-
-
-
-
-/* End animations */
-
 /* contact-us */
 
-        /* à revoir */
+
 
 .contact-us{
   display: flex;
@@ -919,6 +917,9 @@ footer .bottom {
 
 
 /* end contact-us*/
+
+
+/* Animations */
 
 
 /* Animations personnalisées */
@@ -972,51 +973,56 @@ footer .bottom {
 }
 
 
-/* projects */
 
-#projects{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2rem 8rem;
+/* état initial : invisible, décalé à gauche */
+.slide-in,
+.slide-in-delay {
+  opacity: 0;
+  transform: translateX(-20px);
 }
 
-#projects h3{
-  
+/* quand la JS ajoute .animated, on joue l’anim */
+.slide-in.animated,
+.slide-in-delay.animated {
+  animation: slideIn 0.8s ease forwards;
 }
 
-#projects .content{
-  display: flex;
-  gap: 2rem;
+/* variante “delay” pour le second bloc */
+.slide-in-delay.animated {
+  animation-delay: 0.5s;
 }
 
-#projects .content .left{
-  min-width: 40%;
-  max-height: 500px;
-  background-color: #aaa;
-}
-
-#projects .content .right{
-
-  background-color: #aaa;
-  padding: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem 4rem;
-}
-
-#projects .content .right .card{
-  display: flex;
-  gap: 1rem;
-  width: 40%;
-}
-
-#projects .content .right .card .small-img{
-  min-width: 100px;
-  float: left;
-  background-color: #777;
-  cursor: pointer;
+/* keyframes */
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 
-/* end projects */
+/* Slide down */
+
+/* état initial */
+.slide-down,
+.slide-delay {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+/* à l'apparition (ajout par JS) */
+.slide-down.animated,
+.slide-delay.animated {
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* décalage sur .slide-delay */
+.slide-delay.animated {
+  transition-delay: 0.3s;
+}
+
+
+/* End Animations */
+
