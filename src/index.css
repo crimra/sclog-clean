@@ -882,24 +882,9 @@ footer h2{
 
 /* End rejoindre */
 
-
-
-
-
-
-
-/* Animations */
-
-
-
-
-
-
-/* End animations */
-
 /* contact-us */
 
-        /* à revoir */
+
 
 .contact-us{
   display: flex;
@@ -932,6 +917,9 @@ footer h2{
 
 
 /* end contact-us*/
+
+
+/* Animations */
 
 
 /* Animations personnalisées */
@@ -1011,3 +999,29 @@ footer h2{
     transform: translateX(0);
   }
 }
+
+
+/* Slide down */
+
+/* état initial */
+.slide-down,
+.slide-delay {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+/* à l'apparition (ajout par JS) */
+.slide-down.animated,
+.slide-delay.animated {
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* décalage sur .slide-delay */
+.slide-delay.animated {
+  transition-delay: 0.3s;
+}
+
+
+/* End Animations */

@@ -1,9 +1,11 @@
 import React from 'react'
 import Hero from '../Hero'
 import useGlobalTitleAnimations from "../../hooks/useGlobalTitleAnimations";
+import useScrollAnimations from "../../hooks/useScrollAnimations";
   
 const Rse = () => {
   useGlobalTitleAnimations();
+  useScrollAnimations();
   return (
     <>
       <Hero />
@@ -14,11 +16,11 @@ const Rse = () => {
           <div className="rse1-title">
             
             <p className='title2'>Notre engagement sociétal</p>
-            <p>
+            <p className='slide-in'>
               Chez SCLOG, nous croyons fermement que notre succès va de pair avec notre engagement envers la communauté et l'environnement. Nos initiatives RSE sont conçues pour contribuer positivement au développement durable et au bien-être des populations locales:
             </p>
             <br /><br />
-            <p>
+            <p className='slide-in'>
             Chaque action reflète notre engagement à bâtir un avenir solidaire et responsable.
           </p>
           </div>     
@@ -26,7 +28,7 @@ const Rse = () => {
 
           <div className="rse1-elements">
 
-            <div className='rse1-element'>
+            <div className='rse1-element slide-in-delay'>
 
                 <div className="rse1-element-img">
                   <img src="src/assets/service-check.svg" />
@@ -43,7 +45,7 @@ const Rse = () => {
               
             </div>
 
-            <div className='rse1-element'>
+            <div className='rse1-element slide-in-delay'>
 
                 <div className="rse1-element-img">
                   <img src="src/assets/service-check.svg"  />
@@ -60,7 +62,7 @@ const Rse = () => {
               
             </div>
 
-            <div className='rse1-element'>
+            <div className='rse1-element slide-in-delay'>
 
               <div className="rse1-element-img">
                 <img src="src/assets/service-check.svg" />

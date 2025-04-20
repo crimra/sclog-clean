@@ -10,14 +10,18 @@ const useScrollAnimations = () => {
         }
       });
     }, { threshold: 0.1 });
-
-    const elems = document.querySelectorAll(".slide-in, .slide-in-delay");
-    elems.forEach(el => observer.observe(el));
-
+  
+    const elements = document.querySelectorAll(
+      ".slide-in, .slide-in-delay, .slide-down, .slide-delay"
+    );
+  
+    elements.forEach(el => observer.observe(el));
+  
     return () => {
-      elems.forEach(el => observer.unobserve(el));
+      elements.forEach(el => observer.unobserve(el));
     };
   }, []);
+  
 };
 
 export default useScrollAnimations;
