@@ -10,8 +10,8 @@ const Services = () => {
             
             <p className='title1'>Services</p>
             <p className='title2'>Découvrez les services que nous proposons</p>
-            <p className='title3'>Des solutions logistiques fiables et intégrées</p>
-            <p>
+            <p className='title3 slide-in'>Des solutions logistiques fiables et intégrées</p>
+            <p className='slide-in'>
             Grâce à son réseau de dépôts  répartis et à des moyens logistiques diversifiés, la SCLOG assure une gestion fluide, sécurisée et adaptée sur l’ensemble du territoire national.
             </p>
 

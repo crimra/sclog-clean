@@ -69,14 +69,14 @@ const Tabs = () => {
             <div className='tabs jost'>
             <div style={{"display": active==1?"block":"none" }} className="card">
                 <div className='tabs-header outfit'>
-                    <div className="tab-header-text">
+                    <div className="tab-header-text ">
                         <div onClick={()=>{toogleTab(1)}} className={`tab-item ${active==1?"active":""}`}>Présentation</div>
                         <div onClick={()=>{toogleTab(2)}} className={`tab-item ${active==2?"active":""}`}>Vision</div>
-                        <p>SCLOG assure le stockage et le transport en masse des hydrocarbures liquides à travers l'ensemble de la République du Congo, tout en respectant les normes de sécurité et de qualité les plus strictes, attestées par ses certifications ISSSRS Niveau 3 et JIG. Les produits pris en charge incluent le gazole, l'essence, le Jet-A1 (carburant pour avions), le fioul et le pétrole lampant. Ces hydrocarbures proviennent principalement de la production de la raffinerie CORAF et des importations réalisées par la SNPC et les marketeurs.
+                        <p className='slide-in'>SCLOG assure le stockage et le transport en masse des hydrocarbures liquides à travers l'ensemble de la République du Congo, tout en respectant les normes de sécurité et de qualité les plus strictes, attestées par ses certifications ISSSRS Niveau 3 et JIG. Les produits pris en charge incluent le gazole, l'essence, le Jet-A1 (carburant pour avions), le fioul et le pétrole lampant. Ces hydrocarbures proviennent principalement de la production de la raffinerie CORAF et des importations réalisées par la SNPC et les marketeurs.
                         </p>
                     </div>
                     <div className='img-container'>
-                        <img src="src/assets/card.png" alt="Image 1" /*width={"250px"}*/ />
+                        <img src="src/assets/card.png" alt="Image 1" /*width={"250px"}*/ className='slide-in slide-in-delay' />
                     </div>
                 </div>
                 
