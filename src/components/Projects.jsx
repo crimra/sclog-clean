@@ -1,5 +1,9 @@
 import React from 'react'
 
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+
+
+
 const Projects = () => {
 
   
@@ -57,6 +61,26 @@ const Projects = () => {
             </div>
 
 
+          </div>
+        </div>
+
+
+        {/* In Progress */}
+
+        <div className='in-progress'>
+          <h2>En cours...</h2>
+
+          <div className='content'>
+            <h3>Mise en place d'un programme environnemental</h3>
+            <div className='main-card'>
+
+              <FaArrowLeft className='projects-arrows'/>
+              <div className='card'></div>
+              <div className='card'></div>
+              <div className='card'></div>
+
+              <FaArrowRight className='projects-arrows'/>
+            </div>
           </div>
         </div>
     </section>
