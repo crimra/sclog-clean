@@ -1,27 +1,51 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import Rejoindre from './pages/Rejoindre'
 
 const Header = () => {
   return (
     <header className='outfit z-50'>
         <span className='logo'>
-            <Link to={"/"}><img src="src/assets/logo1.png" alt="sclog logo" /></Link>
+            <NavLink to={"/"}><img src="src/assets/logo1.png" alt="sclog logo" 
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "activeNavLink" : ""
+              }
+            /></NavLink>
         </span>
 
         <nav>
             <ul>
-                <li><Link to={"/"}>Acceuil</Link></li>
+                <li><NavLink to={"/"}
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "activeNavLink" : ""
+                  }
+                >Acceuil</NavLink></li>
                 <li><a href="#">Présentation</a></li>
                 <li><a href="#">H3SE</a></li>
                 <li><a href="#projects">Projects</a></li>
 
 
-                <li><Link to={'/logistique'}>Logistique Petrolière</Link></li>
+                <li><NavLink to={'/logistique'}
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "activeNavLink" : ""
+                  }
+                >Logistique Petrolière</NavLink></li>
                 
-                <li><Link to={'/rse'}>RSE</Link></li>
-                <li><Link to={'/rejoindre'}>Nous Rejoindre</Link></li>
-                <li><Link to={'/news'}>Actualité</Link></li>
+                <li><NavLink to={'/rse'}
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "activeNavLink" : ""
+                  }
+                >RSE</NavLink></li>
+                <li><NavLink to={'/rejoindre'}
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "activeNavLink" : ""
+                  }
+                >Nous Rejoindre</NavLink></li>
+                <li><NavLink to={'/news'}
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "activeNavLink" : ""
+                  }
+                >Actualité</NavLink></li>
 
             </ul>
         </nav>

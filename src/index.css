@@ -116,6 +116,18 @@ header {
 }
 
 
+
+.activeNavLink{
+  text-decoration: underline;
+  color: #fff;
+  transform: scale(1.1)
+}
+
+.pending{
+  color: red;
+}
+
+
 .logo {
   height: 5rem;
 }
