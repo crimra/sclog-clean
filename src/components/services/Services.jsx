@@ -1,7 +1,51 @@
 import React from 'react'
 
-const Services = () => {
+const COUNTER_OPTIONS = {
+    duration: 2 // secondes
+  };
 
+const Services = () => {
+    const countersAnimated = useRef(false);
+
+  const animateCounters = (element, target) => {
+    const duration = COUNTER_OPTIONS.duration * 1000;
+    const startTime = Date.now();
+    const startValue = 0;
+    
+    const updateCounter = () => {
+      const elapsed = Date.now() - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const current = Math.floor(progress * target);
+      
+      element.textContent = current < 10 && target >= 10 
+        ? `0${current}` 
+        : current;
+
+      if (progress < 1) {
+        requestAnimationFrame(updateCounter);
+      } else {
+        element.textContent = target < 10 
+          ? `0${target}` 
+          : target;
+      }
+    };
+
+    requestAnimationFrame(updateCounter);
+  };
+
+  useEffect(() => {
+    if (countersAnimated.current) return;
+    
+    const counters = document.querySelectorAll('.huge-num');
+    if (!counters.length) return;
+
+    counters.forEach(counter => {
+      const target = parseInt(counter.dataset.target, 10) || 0;
+      animateCounters(counter, target);
+    });
+
+    countersAnimated.current = true;
+  }, []);
 
   return (
     <section className='services'>
@@ -18,15 +62,15 @@ const Services = () => {
         </div>
         <div className='right jost'>
             <div>
-                <p  className='huge-num'>145</p>
+                <p  className='huge-num' data-target="145">0</p>
                 <p>Camions citernes</p>
             </div>
             <div>
-                <p  className='huge-num'>125</p>
+                <p  className='huge-num' data-target="125">0</p>
                 <p>Wagons citernes</p>
             </div>
             <div>
-                <p  className='huge-num'>05</p>
+                <p  className='huge-num' data-target="5">0</p>
                 <p>Barges</p>
             </div>
 

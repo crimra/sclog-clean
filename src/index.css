@@ -339,6 +339,23 @@ nav ul li a:hover {
 }
 
 
+/* animations.css */
+.huge-num {
+  font-variant-numeric: tabular-nums;
+  transition: opacity 0.3s ease-out;
+}
+
+.huge-num:not(.animated) {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.huge-num.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 .services article:last-child {
 
   display: flex;
@@ -518,7 +535,6 @@ footer h2{
 .slide.current {
   opacity: 1;
   transition-duration: 1s;
-  transform: scale(1.08);
 }
 
 /* End Slider */
