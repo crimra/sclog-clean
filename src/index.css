@@ -528,14 +528,8 @@ footer h2{
 
 /* Slider */
 
-.slide{
-  opacity: 0;
-  transition-duration: 1s ease;
-}
-
-.slide.current {
-  opacity: 1;
-  transition-duration: 1s;
+.slider-container{
+  margin: 5rem 0;
 }
 
 /* End Slider */
