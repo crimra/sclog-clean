@@ -7,6 +7,19 @@
   box-sizing: border-box;
 }
 
+/* Scroll smooth */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Compensation pour header fixe */
+:target::before {
+  content: "";
+  display: block;
+  height: 100px; /* Ajustez à la hauteur de votre header */
+  margin: -100px 0 0;
+}
+
 body {
   font-family: "Jost", sans-serif;
   color: #56676D;
@@ -347,8 +360,7 @@ nav ul li a:hover {
 }
 
 .huge-num:not(.animated) {
-  opacity: 0;
-  transform: translateY(20px);
+  opacity: 1;
 }
 
 .huge-num.animated {

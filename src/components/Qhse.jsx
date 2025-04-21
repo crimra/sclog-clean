@@ -3,13 +3,11 @@ import 'animate.css';
 
 const Qhse = () => {
 
-    
-
   return (
     
     <>
       
-        <div className="qhse">
+        <div className="qhse" id="h3se">
 
             <p className='title1'>H3SEQ</p>
             <p className='title2'>Notre Politique QHSE</p>
