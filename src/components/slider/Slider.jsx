@@ -23,7 +23,7 @@ const Slider = () => {
             {
 
             <div className="w-[1000px] h-[600px] flex scale-80  
-            transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-100" >
+            transition delay-150 duration-500 ease-in-out hover:-translate-y-1" >
                 <img src={SliderData[current].url} alt={SliderData[current].alt}/>
             </div>
   

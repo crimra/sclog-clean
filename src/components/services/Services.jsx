@@ -1,11 +1,58 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react';
 
 const Services = () => {
+  const [camions, setCamions] = useState(0);
+  const [wagons, setWagons] = useState(0);
+  const [barges, setBarges] = useState(0);
+  const numbersRef = useRef(null);
 
+  useEffect(() => {
+    const animateNumber = (target, setNumber, duration = 2000) => {
+      let start = 0;
+      const startTime = Date.now();
+      
+      const update = () => {
+        const elapsed = Date.now() - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const current = Math.floor(progress * target);
+        
+        setNumber(current);
+
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        }
+      };
+
+      requestAnimationFrame(update);
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateNumber(145, setCamions);
+            animateNumber(125, setWagons);
+            animateNumber(5, setBarges);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    if (numbersRef.current) {
+      observer.observe(numbersRef.current);
+    }
+
+    return () => {
+      if (numbersRef.current) {
+        observer.unobserve(numbersRef.current);
+      }
+    };
+  }, []);
 
   return (
     <section className='services'>
-    <article>
+      <article>
         <div className='left'>
             
             <p className='title1'>Services</p>
@@ -16,22 +63,22 @@ const Services = () => {
             </p>
 
         </div>
-        <div className='right jost'>
-            <div>
-                <p  className='huge-num'>145</p>
-                <p>Camions citernes</p>
-            </div>
-            <div>
-                <p  className='huge-num'>125</p>
-                <p>Wagons citernes</p>
-            </div>
-            <div>
-                <p  className='huge-num'>05</p>
-                <p>Barges</p>
-            </div>
-
+        <div className='right jost' ref={numbersRef}>
+          <div>
+            <p className='huge-num'>{camions}</p>
+            <p>Camions citernes</p>
+          </div>
+          <div>
+            <p className='huge-num'>{wagons}</p>
+            <p>Wagons citernes</p>
+          </div>
+          <div>
+            <p className='huge-num'>{barges.toString().padStart(2, '0')}</p>
+            <p>Barges</p>
+          </div>
         </div>
-    </article>
+      </article>
+
 
     <article>
         <div className='service-card slide-down'>
