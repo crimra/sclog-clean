@@ -343,8 +343,8 @@ nav ul li a:hover {
 
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-
+  gap: 2rem;
+  justify-content:center;
 }
 
 .service-card {
@@ -546,12 +546,14 @@ footer h2{
 
 .chart-right .item {
   position: relative;
+  width: 5rem;
+  height: 5rem;
 }
 
 .chart-right .item::before {
   content: '';
-  width: 30px;
-  height: 30px;
+  width: 2rem;
+  height: 2rem;
   position: absolute;
   left: -50%;
   bottom: 50%;
@@ -572,12 +574,12 @@ footer h2{
 
 .chart-right .item:nth-child(4)::before {
   background-color: orange;
-  left: -100%;
+  
 }
 
 .chart-right .item:nth-child(5)::before {
   background-color: #102E60;
-  left: -90%;
+  
 }
 
 
