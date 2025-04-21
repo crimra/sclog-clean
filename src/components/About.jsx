@@ -62,8 +62,21 @@ const Tabs = () => {
         };
     }, []);
 
+    useEffect(() => {
+        const hash = window.location.hash;
+        if (hash) {
+          const element = document.querySelector(hash);
+          if (element) {
+            setTimeout(() => {
+              element.scrollIntoView({ behavior: 'smooth' });
+            }, 500);
+          }
+        }
+      }, []);
+    
+
     return (
-        <section className='about'>
+        <section className='about' id="presentation">
             <p ref={title1Ref} className='title1 outfit' style={{ opacity: 0 }}>A propos</p>
             <p ref={title2Ref} className='title2 outfit'>Découvrez notre histoire, notre vision et nos valeurs</p>
             <div className='tabs jost'>
