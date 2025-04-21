@@ -1099,5 +1099,38 @@ footer h2{
 }
 
 
+      /* in progress */
+
+.in-progress{
+
+  margin: 2rem 200px;
+  text-align: center;
+
+}
+
+.projects-arrows{
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.in-progress .content{
+  background-color: #aaa;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.in-progress .content .main-card{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.in-progress .content .card{
+  width: 400px;
+  height: 300px;
+  background-color: #777;
+}
+
 /* end projects */
 
