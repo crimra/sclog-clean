@@ -916,6 +916,31 @@ footer h2{
 }
 
 
+.form{
+  width: 80%;
+  margin: 0 auto 5rem auto;
+  padding: 0 10rem 5rem 10rem ;
+  
+}
+
+.form input{
+  margin: .4rem 0;
+}
+
+.download{
+  background-color: #20458e;
+  width: fit-content;
+  cursor: pointer;
+  display: block;
+  padding: .2rem;
+  color: white;
+}
+
+.form button{
+  padding: .4rem;
+  cursor: pointer;
+}
+
 
 /* End rejoindre */
 
