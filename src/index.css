@@ -142,13 +142,13 @@ header {
 
 
 .logo {
-  height: 5rem;
+  
 }
 
 .logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 5em;
+  width: 9rem;
+
 }
 
 nav ul {

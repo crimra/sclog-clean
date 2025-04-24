@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className='outfit z-50'>
       <span className='logo'>
-        <Link to="/"><img src="src/assets/logo1.png" alt="sclog logo" /></Link>
+        <Link to="/"><img src="src/assets/log2.svg" alt="sclog logo" /></Link>
       </span>
 
       <nav>
