@@ -41,7 +41,7 @@ const InfiniteSlider = () => {
         {SliderData.map((slide, index) => (
           <div
             key={index}
-            className="w-[400px] h-[300px] flex-shrink-0"
+            className="w-[400px] h-[400px] flex-shrink-0"
           >
             <img
               src={slide.url}
