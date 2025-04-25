@@ -617,7 +617,11 @@ footer h2{
   
 }
 
-
+.action{
+  background-color: #d1d1d1;
+  width: 100%;
+  padding: 5rem 20rem;
+}
 
 .segment {
   opacity: 0;
