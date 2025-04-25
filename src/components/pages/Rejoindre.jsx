@@ -2,9 +2,7 @@ import React from "react";
 import Hero from "../Hero";
 import useGlobalTitleAnimations from "../../hooks/useGlobalTitleAnimations";
 import useScrollAnimations from "../../hooks/useScrollAnimations";
-
-// ⬇️ Composant du formulaire
-import RecruitmentForm from "../../components/RecruitmentForm"; // adapte ce chemin si nécessaire
+import RecruitmentForm from "../../components/RecruitmentForm"; 
 
 const Rejoindre = () => {
   useGlobalTitleAnimations();

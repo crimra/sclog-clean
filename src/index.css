@@ -865,6 +865,30 @@ footer h2{
   width: 2rem;
 }
 
+.rse-onglets{
+  background-color: #d1d1d1;
+  padding: 2rem;
+}
+
+.rse-onglet {
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background-color: #737373;
+  
+}
+
+.rse-onglet button{
+padding: .2rem;
+}
+
+.rse-galerie{
+  margin: 2rem 0;
+}
+
+.rse-galerie img{
+  margin: 0 1rem;
+}
 
 /* End rse */
 
