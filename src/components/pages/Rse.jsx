@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../Hero'
 import useGlobalTitleAnimations from "../../hooks/useGlobalTitleAnimations";
 import useScrollAnimations from "../../hooks/useScrollAnimations";
+import EventTabs from '../EventTabs';
   
 const Rse = () => {
   useGlobalTitleAnimations();
@@ -80,6 +81,14 @@ const Rse = () => {
             </div>
 
           </div>
+
+          </div>
+
+          <div className="societal">
+
+
+          <EventTabs />
+
 
           </div>
 
