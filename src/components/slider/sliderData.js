@@ -1,33 +1,66 @@
 export const SliderData = [
     {
         id:0,
-        url: "https://images.pexels.com/photos/31268781/pexels-photo-31268781.jpeg",
+        url: "/assets/img/1.jpg",
         alt: "image1"
     },
     {
         id:1,
-        url: "https://images.pexels.com/photos/2386141/pexels-photo-2386141.jpeg",
+        url: "/assets/img/2.jpg",
         alt: "image2"
     },
     {
         id:2,
-        url: "https://images.unsplash.com/photo-1741851373499-e2c10ed2eeb3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        url: "/assets/img/3.jpg",
         alt: "image3"
     },
     {
         id:3,
-        url: "https://images.pexels.com/photos/31649624/pexels-photo-31649624/free-photo-of-bustling-urban-intersection-in-seoul-korea.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        url: "/assets/img/4.jpg",
         alt: "image4"
     },
     {
         id:4,
-        url: "https://images.unsplash.com/photo-1741851374721-a546dc41561a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        url: "/assets/img/5.jpg",
         alt: "image5"
     },
+    
     {
-        id:5,
-        url: "https://images.unsplash.com/photo-1741851373499-e2c10ed2eeb3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        alt: "image3"
-    }
+        id:6,
+        url: "/assets/img/7.jpg",
+        alt: "image6"
+    },
+    {
+        id:7,
+        url: "/assets/img/21.jpg",
+        alt: "image7"
+    },
+    {
+        id:8,
+        url: "/assets/img/20.jpg",
+        alt: "image8"
+    },
+    {
+        id:9,
+        url: "/assets/img/19.jpg",
+        alt: "image9"
+    },
+    {
+        id:10,
+        url: "/assets/img/18.jpg",
+        alt: "image10"
+    },
+    {
+        id:11,
+        url: "/assets/img/17.jpg",
+        alt: "image11"
+    },
+    {
+        id:12,
+        url: "/assets/img/16.jpg",
+        alt: "image12"
+    },
+    
+
 
 ]

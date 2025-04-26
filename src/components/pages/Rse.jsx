@@ -9,7 +9,9 @@ const Rse = () => {
   useScrollAnimations();
   return (
     <>
-      <Hero />
+      <section className='hero'>
+        <img src="/assets/img/hero2.webp" alt="hero-image" />
+      </section>
       <section className="rse">
 
           <div className="rse1">
@@ -32,7 +34,7 @@ const Rse = () => {
             <div className='rse1-element slide-in-delay'>
 
                 <div className="rse1-element-img">
-                  <img src="src/assets/service-check.svg" />
+                  <img src="/assets/service-check.svg" />
                 </div>
 
                 <div className="rse1-element-text">
@@ -49,7 +51,7 @@ const Rse = () => {
             <div className='rse1-element slide-in-delay'>
 
                 <div className="rse1-element-img">
-                  <img src="src/assets/service-check.svg"  />
+                  <img src="/assets/service-check.svg"  />
                 </div>
 
                 <div className="rse1-element-text">
@@ -66,7 +68,7 @@ const Rse = () => {
             <div className='rse1-element slide-in-delay'>
 
               <div className="rse1-element-img">
-                <img src="src/assets/service-check.svg" />
+                <img src="/assets/service-check.svg" />
               </div>
 
               <div className="rse1-element-text">

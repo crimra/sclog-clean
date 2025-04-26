@@ -1,69 +1,82 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SmoothScrollLink from './SmoothScrollLink';
 import useScrollSpy from '../hooks/useScrollSpy';
 
 const Header = () => {
   const activeSection = useScrollSpy(['presentation', 'h3se', 'projects']);
+  const [showLangMenu, setShowLangMenu] = useState(false);
+  const [lang, setLang] = useState('fr'); // ou récup via localStorage si besoin
 
-  
+  const toggleLangMenu = () => {
+    setShowLangMenu(prev => !prev);
+  };
+
+  const handleLangChange = (newLang) => {
+    setLang(newLang);
+    setShowLangMenu(false);
+    // Tu peux ici aussi faire: i18n.changeLanguage(newLang); si tu utilises i18next
+  };
 
   return (
-    <header className='outfit z-50'>
+    <header className='outfit z-50 relative'>
       <span className='logo'>
-        <Link to="/"><img src="src/assets/log2.svg" alt="sclog logo" /></Link>
+        <Link to="/"><img src="/assets/log2.svg" alt="sclog logo" /></Link>
       </span>
 
       <nav>
         <ul>
+          <li><Link to="/">Accueil</Link></li>
           <li>
-            <Link to="/">Accueil</Link>
+            <SmoothScrollLink to="#presentation" active={activeSection === 'presentation'}>Présentation</SmoothScrollLink>
           </li>
-
-          {/* Sections one-page */}
           <li>
-            <SmoothScrollLink 
-              to="#presentation" 
-              active={activeSection === 'presentation'}
-            >
-              Présentation
-            </SmoothScrollLink>
+            <SmoothScrollLink to="#h3se" active={activeSection === 'h3se'}>H3SE</SmoothScrollLink>
           </li>
-          
           <li>
-            <SmoothScrollLink 
-              to="#h3se"
-              active={activeSection === 'h3se'}
-            >
-              H3SE
-            </SmoothScrollLink>
+            <SmoothScrollLink to="#projects" active={activeSection === 'projects'}>Projects</SmoothScrollLink>
           </li>
-          
-          <li>
-            <SmoothScrollLink 
-              to="#projects"
-              active={activeSection === 'projects'}
-            >
-              Projects
-            </SmoothScrollLink>
-          </li>
-
-          {/* Pages séparées */}
-          <li><Link to="/logistique">Logistique Pétrolière</Link></li>
+          <li><Link to="/logistique">Logistique pétrolière</Link></li>
           <li><Link to="/rse">RSE</Link></li>
-          <li><Link to="/rejoindre">Nous Rejoindre</Link></li>
+          <li><Link to="/rejoindre">Nous rejoindre</Link></li>
           <li><Link to="/news">Actualité</Link></li>
         </ul>
       </nav>
 
       <div className="search-box">
-            <input type="text" placeholder='Recherche...'/>
-            <img src="src/assets/search-icon.png" alt="search icon" />
-        </div>
+        <input type="text" placeholder='Recherche...' />
+        <img src="/assets/search-icon.png" alt="search icon" />
+      </div>
 
-        <span id='toogle-lang'>
-            <img src="src/assets/france.png" alt="french logo" />
+      {/* Menu Langue */}
+      <div className="relative">
+        <span id='toggle-lang' onClick={toggleLangMenu} className="cursor-pointer">
+          <img
+            src={`/assets/${lang === 'fr' ? 'france' : 'uk'}.png`}
+            alt="current lang"
+            className="w-6 h-6"
+          />
         </span>
+
+        {showLangMenu && (
+  <div className="absolute right-0 mt-2 bg-white border shadow rounded w-32 z-50">
+    <button
+      className="flex items-center gap-2 px-4 py-2 w-full hover:bg-gray-100"
+      onClick={() => handleLangChange('fr')}
+    >
+      <img src="/assets/france.png" alt="Français" className="w-5 h-5" />
+      <span className="text-[#56676D]">Français</span>
+    </button>
+    <button
+      className="flex items-center gap-2 px-4 py-2 w-full hover:bg-gray-100"
+      onClick={() => handleLangChange('en')}
+    >
+      <img src="/assets/uk.png" alt="English" className="w-5 h-5" />
+      <span className="text-[#56676D]">English</span>
+    </button>
+  </div>
+        )}
+      </div>
     </header>
   );
 };

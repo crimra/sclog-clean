@@ -9,37 +9,37 @@ const News = () => {
     useEffect(()=>{
         setNews([
             {
-                img:'src/assets/news-img.png',
+                img:'/assets/news-img.png',
                 title:'Lorem ipsum dolor sit amet',
                 date:'Mai 18, 2023',
                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
             },
             {
-                img:'src/assets/news-img.png',
+                img:'/assets/news-img.png',
                 title:'Dolor ipsum lorem sit amet',
                 date:'Aout 09, 2024',
                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
             },
             {
-                img:'src/assets/news-img.png',
+                img:'/assets/news-img.png',
                 title:'Dolor ipsum dolor sit amet',
                 date:'Mai 18, 2023',
                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
             },
             {
-                img:'src/assets/news-img.png',
+                img:'/assets/news-img.png',
                 title:'Sit Amet Ipsum',
                 date:'Aout 09, 2024',
                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
             },
             {
-                img:'src/assets/news-img.png',
+                img:'/assets/news-img.png',
                 title:"Lorem Ipsum Dolor",
                 date:'Mai 18, 2023',
                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua.'
             },
             {
-                img:'src/assets/news-img.png',
+                img:'/assets/news-img.png',
                 title:'Tempor incididunt ut labore',
                 date:'Aout 09, 2024',
                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.!'
@@ -49,8 +49,10 @@ const News = () => {
 
   return (
     <>
-      <Hero />
-      <section id='news-section'>
+      <section className='hero'>
+        <img src="/assets/img/hero4.webp" alt="hero-image" />
+      </section>
+      <section id='news-section' className='news-section'>
 
         <h1 className='title2'>News</h1>
 

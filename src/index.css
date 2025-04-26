@@ -256,6 +256,10 @@ nav ul li a:hover {
   width: 50%;
   text-align: justify;
 }
+.img-container{
+  width: 32rem;
+  height: 25rem;
+}
 
 .img-container .img {
   width: 100%;
@@ -275,7 +279,10 @@ nav ul li a:hover {
   position: relative;
   width: 100vw;
   height: 70vh;
-  background-image: url(src/assets/banner.png);
+  background-image: url(/assets/img/banner.jpg);
+  background-position: center;
+  background-size:cover;
+  background-attachment:fixed;
 }
 
 .banner-elements {
@@ -284,10 +291,11 @@ nav ul li a:hover {
   position: absolute;
   transform: translateX(18rem);
   padding-top: 12%;
-  background-color: #737373;
+  background-color: #20458ee2;
   height: 70vh;
   padding-right: 5rem;
   padding-left: 5rem;
+  
 }
 
 .banner-elements .element {
@@ -418,10 +426,6 @@ nav ul li a:hover {
 /* news */
 
 #news-section {
-  background-color: #eee;
-  width: 80%;
-  margin: 0 auto;
-  padding: 30px;
   text-align: center;
 }
 
@@ -449,8 +453,6 @@ nav ul li a:hover {
 }
 
 .news-row {
-
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -752,16 +754,21 @@ footer h2{
   text-align: justify;
 }
 
+.logistique-section .items .item img{
+  width: 26rem;
+  height: fit-content;
+}
 
 .logistique-schema .schema{
   margin: 4rem 0;
   background-color: #20458e;
   width: 100%;
-  background-image: url(src/assets/schema.svg);
+  background-image: url(/assets/schema.svg);
   background-repeat: no-repeat;
   height: 50vh;
   background-size: contain;
   background-position: center;
+  
 }
 
 .logistique-schema{
@@ -770,6 +777,7 @@ footer h2{
   width: 100vw;
   height: 70vh;
   margin: 4rem 0;
+ 
 }
 
 .logistique-schema .schema img{
@@ -878,12 +886,13 @@ footer h2{
   justify-content: space-around;
   margin-bottom: 2rem;
   padding: 2rem;
-  background-color: #737373;
+  background-color: #bdbdbd;
   
 }
 
 .rse-onglet button{
-padding: .2rem;
+padding: .2rem .5rem;
+border: none;
 }
 
 .rse-galerie{
@@ -894,6 +903,11 @@ padding: .2rem;
   margin: 0 1rem;
 }
 
+
+.rse-text{
+  text-align: justify;
+  align-content: center;
+}
 /* End rse */
 
 
@@ -1126,9 +1140,6 @@ padding: .2rem;
   margin: 2rem 8rem;
 }
 
-#projects h3{
-  
-}
 
 #projects .content{
   display: flex;
@@ -1163,6 +1174,15 @@ padding: .2rem;
   cursor: pointer;
 }
 
+#projects .left{
+  background-image:url(/assets/img/paysage.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+#projects h1{
+  font-size: 2rem;
+}
 
       /* in progress */
 

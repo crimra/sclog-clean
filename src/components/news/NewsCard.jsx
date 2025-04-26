@@ -11,11 +11,11 @@ const NewsCard = ({img, title, date, text}) => {
         <div className='news-row'>
             <button>news</button>
             <span>
-                <img src="src/assets/date.png" alt="date-icon" />
+                <img src="/assets/date.png" alt="date-icon" />
                 <span>{date}</span>
             </span>
             <span>
-                <img src="src/assets/share.png" alt="share-icon" />
+                <img src="/assets/share.png" alt="share-icon" />
                 <span>Partager</span>
             </span>
         </div>
