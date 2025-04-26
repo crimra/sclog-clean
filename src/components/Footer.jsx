@@ -16,7 +16,7 @@ const Footer = () => {
             <h2 className='outfit'>Horaires</h2>
             <p className='jost'>7h30 - 17h30</p>
             <h2 className='outfit'>Suivez-nous</h2>
-            <a href=""><img src="src/assets/linkedIn1.png" alt="" width={"25px"}/></a>
+            <a href="https://cg.linkedin.com/company/sclog-cg" target="_blank"><img src="/assets/linkedIn1.png" alt="" width={"25px"}/></a>
         </div>
 
         </div>

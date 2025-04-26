@@ -107,19 +107,19 @@ const Action = () => {
         <div className="chart-right">
           {/* Tes items logos */}
           <div className="item">
-            <img src="src/assets/Total.svg" alt="Total" />
+            <img src="/assets/Total.svg" alt="Total" />
           </div>
           <div className="item">
-            <img src="src/assets/Puma.svg" alt="Puma" />
+            <img src="/assets/Puma.svg" alt="Puma" />
           </div>
           <div className="item">
-            <img src="src/assets/x-oil.svg" alt="X-Oil" />
+            <img src="/assets/x-oil.svg" alt="X-Oil" />
           </div>
           <div className="item">
-            <img src="src/assets/GPL.svg" alt="GPL" />
+            <img src="/assets/GPL.svg" alt="GPL" />
           </div>
           <div className="item">
-            <img src="src/assets/SNPC.svg" alt="SNPC" />
+            <img src="/assets/SNPC.svg" alt="SNPC" />
           </div>
         </div>
       </div>

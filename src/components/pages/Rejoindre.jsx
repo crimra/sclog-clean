@@ -10,7 +10,9 @@ const Rejoindre = () => {
 
   return (
     <>
-      <Hero />
+      <section className='hero'>
+        <img src="/assets/img/hero3.webp" alt="hero-image" />
+      </section>
 
       <section className="join">
 
@@ -21,7 +23,7 @@ const Rejoindre = () => {
             {/* ÉLÉMENT 1 */}
             <div className="join1-element">
               <div className="join1-element-img slide-in">
-                <img src="src/assets/service-check.svg" />
+                <img src="/assets/service-check.svg" />
               </div>
               <div className="join1-element-text">
                 <p className="slide-in-delay">Décision de recrutement</p>
@@ -34,7 +36,7 @@ const Rejoindre = () => {
             {/* ÉLÉMENT 2 */}
             <div className="join1-element">
               <div className="join1-element-img slide-in-delay">
-                <img src="src/assets/service-check.svg" />
+                <img src="/assets/service-check.svg" />
               </div>
               <div className="join1-element-text">
                 <p className="slide-in-delay">Processus de recrutement</p>
@@ -47,7 +49,7 @@ const Rejoindre = () => {
             {/* ÉLÉMENT 3 */}
             <div className="join1-element">
               <div className="join1-element-img slide-in-delay">
-                <img src="src/assets/service-check.svg" />
+                <img src="/assets/service-check.svg" />
               </div>
               <div className="join1-element-text">
                 <p className="slide-in-delay">Intégration</p>

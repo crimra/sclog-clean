@@ -15,33 +15,33 @@ const Qhse = () => {
             <div className="qhse-elements">
 
                 <div className="element slide-in">
-                    <img src="src/assets/service-check.svg" alt="" />
+                    <img src="/assets/service-check.svg" alt="" />
                     <p>Mise en place d’une politique H3SE</p>
                 </div>
 
                 <div className="element slide-in">
-                    <img src="src/assets/service-check.svg" alt="" />
+                    <img src="/assets/service-check.svg" alt="" />
                     <p>Mise en place de piézomètres dans les dépôts pour assurer le suivi de la qualité des eaux souterraines</p>
                 </div>
 
                 <div className="element slide-in">
-                    <img src="src/assets/service-check.svg" alt="" />
+                    <img src="/assets/service-check.svg" alt="" />
                     <p>Mise en place d’un programme environnemental</p>
                 </div>
 
                 <div className="element slide-in">
-                    <img src="src/assets/service-check.svg" alt="" />
+                    <img src="/assets/service-check.svg" alt="" />
                     <p>Mise en place d’un plan de continuité d’activité (PCA)</p>
                 </div>
 
                 <div className="element slide-in">
-                    <img src="src/assets/service-check.svg" alt="" />
+                    <img src="/assets/service-check.svg" alt="" />
                     <p>Audit JIG tous les 2 ans sur les sites recevant du Jet-A1 (carburant aviation)</p>
                 </div>
                 
                 <a href="#">
                 <div className="element">
-                    <img src="src/assets/download.svg" alt="" srcSet="" />
+                    <img src="/assets/download.svg" alt="" srcSet="" />
                     <p>Télécharger notre engagement H3SE</p>
                 </div>
                 </a>

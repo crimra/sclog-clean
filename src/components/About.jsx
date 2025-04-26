@@ -89,7 +89,7 @@ const Tabs = () => {
                         </p>
                     </div>
                     <div className='img-container'>
-                        <img src="src/assets/card.png" alt="Image 1" /*width={"250px"}*/ className='slide-in slide-in-delay' />
+                        <img src="/assets/img/presentation.jpg" alt="Image 1" /*width={"250px"}*/ className='slide-in slide-in-delay' />
                     </div>
                 </div>
                 
@@ -104,7 +104,7 @@ const Tabs = () => {
                         </p>
                     </div>
                     <div className='img-container'>
-                        <img src="src/assets/card-blue.png" alt="Image 1" /*width={"250px"}*/ />
+                        <img src="/assets/img/team.jpg" alt="Image 1" /*width={"250px"}*/ />
                     </div>
                 </div>
             </div>
