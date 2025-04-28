@@ -88,7 +88,7 @@ body {
   position: relative;
   font-weight: bold;
   margin: 2rem 0 5.6rem 0;
-  width: 52%;
+  width: 67%;
 }
 
 .title2::before {
@@ -230,10 +230,14 @@ nav ul li a:hover {
 
 /*  Tabs  */
 
+.tabs{
+  justify-items: center;
+  justify-content: center;
+}
 
 .tabs .tabs-header {
   display: flex;
-
+  gap: 2rem;
 }
 
 .tabs .card {
@@ -247,24 +251,27 @@ nav ul li a:hover {
   text-decoration-line: underline;
 }
 
+.tab-header-text{
+  
+}
 .tab-header-text p {
-  width: 90%;
   margin-top: 1rem;
 }
 
 .tab-header-text{
-  width: 50%;
+  width: 100%;
   text-align: justify;
 }
 .img-container{
-  width: 32rem;
-  height: 25rem;
+  width: 100%;
+  margin-top: 3rem;
 }
 
 .img-container .img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  height: max-content;
+  object-fit: cover;
 }
 
 .active {
@@ -750,7 +757,7 @@ footer h2{
 }
 
 .logistique-section .items .item p{
-  margin-top: 15%;
+  margin-top: 5%;
   text-align: justify;
 }
 

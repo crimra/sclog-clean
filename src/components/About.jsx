@@ -76,10 +76,10 @@ const Tabs = () => {
     
 
     return (
-        <section className='about' id="presentation">
+        <section className='about ' id="presentation">
             <p ref={title1Ref} className='title1 outfit' style={{ opacity: 0 }}>A propos</p>
             <p ref={title2Ref} className='title2 outfit'>Découvrez notre histoire, notre vision et nos valeurs</p>
-            <div className='tabs jost'>
+            <div className='tabs jost '>
             <div style={{"display": active==1?"block":"none" }} className="card">
                 <div className='tabs-header outfit'>
                     <div className="tab-header-text ">
@@ -100,11 +100,11 @@ const Tabs = () => {
                     <div className="tab-header-text">
                         <div onClick={()=>{toogleTab(1)}} className={`tab-item ${active==1?"active":""}`}>Présentation</div>
                         <div onClick={()=>{toogleTab(2)}} className={`tab-item ${active==2?"active":""}`}>Vision</div>
-                        <p>Être la référence en termes d'excellence opérationnelle et d'innovation dans le secteur du stockage et de la logistique des produits pétroliers liquides au Congo et en Afrique centrale.
+                        <p className='slide-in'>Être la référence en termes d'excellence opérationnelle et d'innovation dans le secteur du stockage et de la logistique des produits pétroliers liquides au Congo et en Afrique centrale.
                         </p>
                     </div>
                     <div className='img-container'>
-                        <img src="/assets/img/team.jpg" alt="Image 1" /*width={"250px"}*/ />
+                        <img src="/assets/img/team.jpg" alt="Image 1" /*width={"250px"}*/ className='slide-in slide-in-delay' />
                     </div>
                 </div>
             </div>

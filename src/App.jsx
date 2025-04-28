@@ -9,6 +9,7 @@ import Rse from './components/pages/Rse'
 import Rejoindre from './components/pages/Rejoindre'
 import News from './components/pages/News'
 import Footer from './components/Footer'
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
   return (
     <>
      <Header />
-
+     <ScrollToTop />
      <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/logistique' element={<Logistique />}/>
