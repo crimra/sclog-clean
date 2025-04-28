@@ -15,17 +15,31 @@ const Header = () => {
   const handleLangChange = (newLang) => {
     setLang(newLang);
     setShowLangMenu(false);
-    // Tu peux ici aussi faire: i18n.changeLanguage(newLang); si tu utilises i18next
+    //i18n.changeLanguage(newLang); i18next
   };
 
+  const [burgerOpen, setBurgerOpen] = useState(false);
+
+  
   return (
     <header className='outfit z-50 relative'>
       <span className='logo'>
         <Link to="/"><img src="/assets/log2.svg" alt="sclog logo" /></Link>
       </span>
 
-      <nav>
-        <ul className='flex gap-6 text-[1rem] md:text-[0.9rem] sm:text-[0.8rem] flex-wrap'>
+      <button
+        className={`burger ${burgerOpen ? 'open' : ''}`}
+        onClick={() => setBurgerOpen(prev => !prev)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+
+
+      <nav className={burgerOpen ? 'open' : ''}>
+        <ul className='flex text-[1rem] md:text-[0.9rem] sm:text-[0.8rem] flex-wrap'>
           <li><Link to="/">Accueil</Link></li>
           <li>
             <SmoothScrollLink to="#presentation" active={activeSection === 'presentation'}>Présentation</SmoothScrollLink>
