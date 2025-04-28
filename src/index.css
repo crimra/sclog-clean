@@ -34,9 +34,10 @@ body {
 .big-carte,
 .rse,
 .contact-us,
-.join1{
+.join1,
+.projects{
   /* margin: 5rem 20rem; */
-  width: 80%;
+  width: 100%;
   margin: 0 auto 0 auto;
   padding: 5rem 10rem;
   background-color: #fff;
@@ -117,15 +118,13 @@ body {
 
 header {
   color: #FFF;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 3rem;
   position: sticky;
   top: 0;
   background-color: #1F458E;
- 
 }
 
 
@@ -160,7 +159,6 @@ nav ul {
 nav ul li a {
   color: #FFF;
   text-decoration: none;
-
   transition: 500ms ease-in-out;
 
 }
@@ -264,7 +262,6 @@ nav ul li a:hover {
 }
 .img-container{
   width: 100%;
-  margin-top: 3rem;
 }
 
 .img-container .img {
@@ -397,11 +394,16 @@ nav ul li a:hover {
 
 
 .services article:last-child {
-
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content:center;
+  justify-content: center;
+  padding: 0;
+}
+
+.services article:last-child > * {
+  flex: 0 0 calc(50% - 1rem); /* 2 éléments par ligne avec espace */
+  max-width: calc(50% - 1rem);
 }
 
 .service-card {
@@ -629,7 +631,7 @@ footer h2{
 .action{
   background-color: #d1d1d1;
   width: 100%;
-  padding: 5rem 20rem;
+  padding: 5rem 15rem;
 }
 
 .segment {
@@ -681,13 +683,13 @@ footer h2{
   gap: 2rem;
   flex-wrap:wrap;
   align-content: center;
-  justify-content: space-between;
+  justify-content:space-between;
   row-gap: 5rem;
 }
 
 .qhse-elements .element{
   display: flex;
-  width: 25rem;
+  width: 30rem;
   position: relative;
 }
 
@@ -743,13 +745,14 @@ footer h2{
 .logistique-section .items{
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 2rem;
 }
 
 .logistique-section .items .item{
   display: flex;
-  gap: 4rem;
-  justify-items: center;
+  align-items: center; 
+  justify-content: center; 
+  gap: 2rem;
 }
 
 .logistique-section .items .item:nth-child(2){
@@ -757,7 +760,6 @@ footer h2{
 }
 
 .logistique-section .items .item p{
-  margin-top: 5%;
   text-align: justify;
 }
 
@@ -1036,9 +1038,33 @@ border: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem 8rem;
+  background-color: #d1d1d1;
+  z-index: 0;
 }
 
+#projects h2{
+  text-align: center;
+  font-size: 2rem;
+  position: relative;
+  display: block;
+  margin: 0 0 1rem 0 ;
+  z-index: 1;
+}
+
+#projects h2 span{
+  z-index: 1;
+  color: white;
+}
+
+#projects h2 span::before{
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 100%;
+  background-color: #1F458E;
+  z-index: -1;
+  left: -10%;
+}
 
 #projects .content{
   display: flex;
@@ -1047,8 +1073,8 @@ border: none;
 
 #projects .content .left{
   min-width: 40%;
-  max-height: 500px;
-  background-color: #aaa;
+  min-height: fit-content;
+  background-color: ;
 }
 
 #projects .content .right{
@@ -1057,17 +1083,18 @@ border: none;
   padding: 2rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem 4rem;
+  gap: 1rem 2rem;
 }
 
 #projects .content .right .card{
   display: flex;
   gap: 1rem;
-  width: 40%;
+  width: 100%;
 }
 
 #projects .content .right .card .small-img{
   min-width: 100px;
+  min-height: 40px;
   float: left;
   background-color: #777;
   cursor: pointer;
@@ -1080,7 +1107,7 @@ border: none;
 }
 
 #projects h1{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
       /* in progress */
@@ -1227,11 +1254,116 @@ border: none;
 /* End Animations */
 
 
+
+
+
+
+
 /* Media query */
 
+
+
 /* Responsive : réduit le gap en dessous de 1370px */
+
 @media (max-width: 1370px) {
   header {
     gap: 1rem;
   }
 }
+
+
+/* --- Burger Button --- */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 60;
+}
+
+.burger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  transition: 0.3s ease;
+  transform-origin: center;
+}
+
+/* Quand le menu est ouvert */
+.burger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* --- Desktop Style par défaut --- */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.search-box {
+  display: flex; /* affichée sur desktop */
+}
+
+/* --- Responsive --- */
+@media (max-width: 1180px) {
+  header {
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #1F458E;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  nav.open {
+    max-height: 500px; /* affiche le menu */
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .search-box {
+    display: none; /* cachée sur mobile */
+  }
+}
+
+
+
+/* End Media query */

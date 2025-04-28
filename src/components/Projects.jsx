@@ -9,7 +9,7 @@ const Projects = () => {
   
 
   return (
-    <section id='projects' className='projets'>
+    <section id='projects' className='projects'>
         <h2 className='title2'>Project</h2>
         <h1 className=''>Réalisés</h1>
       <div className='content'>
