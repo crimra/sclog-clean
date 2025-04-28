@@ -1030,10 +1030,99 @@ border: none;
 /* end contact-us*/
 
 
+/* projects */
+
+#projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 8rem;
+}
+
+
+#projects .content{
+  display: flex;
+  gap: 2rem;
+}
+
+#projects .content .left{
+  min-width: 40%;
+  max-height: 500px;
+  background-color: #aaa;
+}
+
+#projects .content .right{
+
+  background-color: #aaa;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 4rem;
+}
+
+#projects .content .right .card{
+  display: flex;
+  gap: 1rem;
+  width: 40%;
+}
+
+#projects .content .right .card .small-img{
+  min-width: 100px;
+  float: left;
+  background-color: #777;
+  cursor: pointer;
+}
+
+#projects .left{
+  background-image:url(/assets/img/paysage.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+#projects h1{
+  font-size: 2rem;
+}
+
+      /* in progress */
+
+.in-progress{
+
+  margin: 2rem 200px;
+  text-align: center;
+
+}
+
+.projects-arrows{
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.in-progress .content{
+  background-color: #aaa;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.in-progress .content .main-card{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.in-progress .content .card{
+  width: 400px;
+  height: 300px;
+  background-color: #777;
+}
+
+/* end projects */
+
+
+
 /* Animations */
 
 
-/* Animations personnalisées */
 @keyframes wordAppear {
   from {
       opacity: 0;
@@ -1138,91 +1227,11 @@ border: none;
 /* End Animations */
 
 
-/* projects */
+/* Media query */
 
-#projects{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2rem 8rem;
+/* Responsive : réduit le gap en dessous de 1370px */
+@media (max-width: 1370px) {
+  header {
+    gap: 1rem;
+  }
 }
-
-
-#projects .content{
-  display: flex;
-  gap: 2rem;
-}
-
-#projects .content .left{
-  min-width: 40%;
-  max-height: 500px;
-  background-color: #aaa;
-}
-
-#projects .content .right{
-
-  background-color: #aaa;
-  padding: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem 4rem;
-}
-
-#projects .content .right .card{
-  display: flex;
-  gap: 1rem;
-  width: 40%;
-}
-
-#projects .content .right .card .small-img{
-  min-width: 100px;
-  float: left;
-  background-color: #777;
-  cursor: pointer;
-}
-
-#projects .left{
-  background-image:url(/assets/img/paysage.jpg);
-  background-size:cover;
-  background-repeat: no-repeat;
-}
-
-#projects h1{
-  font-size: 2rem;
-}
-
-      /* in progress */
-
-.in-progress{
-
-  margin: 2rem 200px;
-  text-align: center;
-
-}
-
-.projects-arrows{
-  font-size: 2rem;
-  margin: 1rem;
-}
-
-.in-progress .content{
-  background-color: #aaa;
-  display: flex;
-  flex-direction: column;
-  padding: 3rem;
-}
-
-.in-progress .content .main-card{
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.in-progress .content .card{
-  width: 400px;
-  height: 300px;
-  background-color: #777;
-}
-
-/* end projects */
-

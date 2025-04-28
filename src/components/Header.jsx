@@ -25,7 +25,7 @@ const Header = () => {
       </span>
 
       <nav>
-        <ul>
+        <ul className='flex gap-6 text-[1rem] md:text-[0.9rem] sm:text-[0.8rem] flex-wrap'>
           <li><Link to="/">Accueil</Link></li>
           <li>
             <SmoothScrollLink to="#presentation" active={activeSection === 'presentation'}>Présentation</SmoothScrollLink>
@@ -59,22 +59,22 @@ const Header = () => {
         </span>
 
         {showLangMenu && (
-  <div className="absolute right-0 mt-2 bg-white border shadow rounded w-32 z-50">
-    <button
-      className="flex items-center gap-2 px-4 py-2 w-full hover:bg-gray-100"
-      onClick={() => handleLangChange('fr')}
-    >
-      <img src="/assets/france.png" alt="Français" className="w-5 h-5" />
-      <span className="text-[#56676D]">Français</span>
-    </button>
-    <button
-      className="flex items-center gap-2 px-4 py-2 w-full hover:bg-gray-100"
-      onClick={() => handleLangChange('en')}
-    >
-      <img src="/assets/uk.png" alt="English" className="w-5 h-5" />
-      <span className="text-[#56676D]">English</span>
-    </button>
-  </div>
+        <div className="absolute right-0 mt-2 bg-white border shadow rounded w-32 z-50">
+          <button
+            className="flex items-center gap-2 px-4 py-2 w-full hover:bg-gray-100"
+            onClick={() => handleLangChange('fr')}
+            >
+            <img src="/assets/france.png" alt="Français" className="w-5 h-5" />
+            <span className="text-[#56676D]">Français</span>
+          </button>
+          <button
+            className="flex items-center gap-2 px-4 py-2 w-full hover:bg-gray-100"
+            onClick={() => handleLangChange('en')}
+          >
+            <img src="/assets/uk.png" alt="English" className="w-5 h-5" />
+            <span className="text-[#56676D]">English</span>
+          </button>
+        </div>
         )}
       </div>
     </header>
