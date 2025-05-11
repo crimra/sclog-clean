@@ -46,7 +46,7 @@ const InfiniteSlider = () => {
             <img
               src={slide.url}
               alt={slide.alt}
-              className="w-full h-full object-cover shadow-md"
+              className="w-full h-[50%] object-cover shadow-md"
             />
           </div>
         ))}
