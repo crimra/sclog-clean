@@ -1,50 +1,72 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
+import { PieChart, Pie, Cell, Tooltip } from 'recharts';
+
+const data = [
+  { name: 'Total', value: 25, color: '#F70C0D', logo: '/assets/Total.svg' },
+  { name: 'Puma', value: 25, color: '#102E60', logo: '/assets/Puma.svg' },
+  { name: 'X-Oil', value: 25, color: '#FFC000', logo: '/assets/x-oil.svg' },
+  { name: 'GPL', value: 12.5, color: '#00B050', logo: '/assets/GPL.svg' },
+  { name: 'SNPC', value: 12.5, color: '#FFFF00', logo: '/assets/SNPC.svg' },
+];
+
+const CustomLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
+  const RADIAN = Math.PI / 180;
+  const labelRadius = outerRadius + 50;
+  const textRadius = innerRadius + (outerRadius - innerRadius) * 0.5;
+
+  const xLogo = cx + labelRadius * Math.cos(-midAngle * RADIAN);
+  const yLogo = cy + labelRadius * Math.sin(-midAngle * RADIAN);
+
+  const xText = cx + textRadius * Math.cos(-midAngle * RADIAN);
+  const yText = cy + textRadius * Math.sin(-midAngle * RADIAN);
+
+  // Ajuster la taille du logo en fonction du nom
+  const logoSize = data[index].name === 'Puma' || data[index].name === 'X-Oil' ? 100 : 50;
+  const boxSize = 40;
+
+  return (
+    <g>
+      {/* Pourcentage avec blur */}
+      <foreignObject
+        x={xText - boxSize / 2}
+        y={yText - boxSize / 2}
+        width={boxSize}
+        height={boxSize}
+      >
+        <div
+          xmlns="http://www.w3.org/1999/xhtml"
+          style={{
+            width: boxSize,
+            height: boxSize,
+            borderRadius: '50%',
+            background: 'rgba(0, 0, 0, 0.5)',
+            backdropFilter: 'blur(5px)',
+            WebkitBackdropFilter: 'blur(5px)',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            color: '#fff',
+            fontWeight: 'bold',
+            fontSize: '12px',
+          }}
+        >
+          {data[index].value}%
+        </div>
+      </foreignObject>
+
+      {/* Logo positionné autour */}
+      <image
+        href={data[index].logo}
+        x={xLogo - logoSize / 2}
+        y={yLogo - logoSize / 2}
+        width={logoSize}
+        height={logoSize}
+      />
+    </g>
+  );
+};
 
 const Action = () => {
-    const chartRef = useRef(null);
-
-    const observer = new IntersectionObserver(
-        ([entry]) => {
-          console.log(
-            '[DEBUG] ratio:', entry.intersectionRatio,
-            'top:', entry.boundingClientRect.top,
-            'window.innerHeight:', window.innerHeight
-          );
-          // … ton code existant
-        },
-        { threshold: 0.5, rootMargin: '0px 0px -200px 0px' }
-      );
-      
-
-  useEffect(() => {
-    const animateSegments = () => {
-      const segments = chartRef.current.querySelectorAll('.segment');
-      const delays = [200, 400, 800, 1000, 1200]; // en ms
-
-      segments.forEach((seg, i) => {
-        setTimeout(() => {
-          seg.classList.add('animate');
-        }, delays[i]);
-      });
-    };
-
-    const observer = new IntersectionObserver(
-      ([entry], obs) => {
-        if (entry.isIntersecting) {
-          animateSegments();
-          obs.unobserve(entry.target);
-        }
-      },
-      {
-        threshold: 0.5,
-        rootMargin: '0px 0px 100px 0px',
-      }
-    );
-
-    observer.observe(chartRef.current);
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <div className="action">
       <p className="title2">Actionnariat SCLOG</p>
@@ -53,75 +75,23 @@ const Action = () => {
         l’actionnariat est composé comme suit :
       </p>
 
-      {/* On attache la ref ici */}
-      <div className="chart" ref={chartRef}>
-        <div className="chart-left">
-          <svg width="250" height="250" viewBox="0 0 500 500">
-            <path
-              className="segment"
-              d="M250,250 L500,250 A250,250 0 0,1 250,500 Z"
-              fill="#F70C0D"
-            />
-            <text x="375" y="375" textAnchor="middle" fill="white" fontSize="20">
-              25%
-            </text>
-
-            <path
-              className="segment"
-              d="M250,250 L250,500 A250,250 0 0,1 0,250 Z"
-              fill="#102E60"
-            />
-            <text x="125" y="375" textAnchor="middle" fill="white" fontSize="20">
-              25%
-            </text>
-
-            <path
-              className="segment"
-              d="M250,250 L0,250 A250,250 0 0,1 250,0 Z"
-              fill="#FFC000"
-            />
-            <text x="125" y="125" textAnchor="middle" fill="#000" fontSize="20">
-              25%
-            </text>
-
-            <path
-              className="segment"
-              d="M250,250 L250,0 A250,250 0 0,1 426.77,73.22 Z"
-              fill="#00B050"
-            />
-            <text x="345" y="90" textAnchor="middle" fill="white" fontSize="20">
-              12.5%
-            </text>
-
-            <path
-              className="segment"
-              d="M250,250 L426.77,73.22 A250,250 0 0,1 500,250 Z"
-              fill="#FFFF00"
-            />
-            <text x="440" y="170" textAnchor="middle" fill="black" fontSize="20">
-              12.5%
-            </text>
-          </svg>
-        </div>
-
-        <div className="chart-right">
-          {/* Tes items logos */}
-          <div className="item">
-            <img src="/assets/Total.svg" alt="Total" />
-          </div>
-          <div className="item">
-            <img src="/assets/Puma.svg" alt="Puma" />
-          </div>
-          <div className="item">
-            <img src="/assets/x-oil.svg" alt="X-Oil" />
-          </div>
-          <div className="item">
-            <img src="/assets/GPL.svg" alt="GPL" />
-          </div>
-          <div className="item">
-            <img src="/assets/SNPC.svg" alt="SNPC" />
-          </div>
-        </div>
+      <div className="chart">
+        <PieChart width={500} height={500}>
+          <Pie
+            data={data}
+            dataKey="value"
+            cx="50%"
+            cy="50%"
+            outerRadius={180}
+            labelLine={false}
+            label={CustomLabel}
+          >
+            {data.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={entry.color} />
+            ))}
+          </Pie>
+          <Tooltip />
+        </PieChart>
       </div>
     </div>
   );

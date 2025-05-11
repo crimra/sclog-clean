@@ -10,6 +10,7 @@
 /* Scroll smooth */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* Compensation pour header fixe */
@@ -29,15 +30,13 @@ body {
 .about,
 .services,
 .action,
-.qhse,
 .logistique-section,
 .big-carte,
 .rse,
 .contact-us,
-.join1,
-.projects{
+.join1{
   /* margin: 5rem 20rem; */
-  width: 100%;
+  width: 85%;
   margin: 0 auto 0 auto;
   padding: 5rem 10rem;
   background-color: #fff;
@@ -293,7 +292,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   position: absolute;
-  transform: translateX(18rem);
+  transform: translateX(16rem);
   padding-top: 12%;
   background-color: #20458ee2;
   height: 70vh;
@@ -565,6 +564,9 @@ footer h2{
 
 .slider-container{
   margin: 5rem 0;
+  background-color: #d1d1d1;
+  padding: 4rem 0;
+  min-height: 40vh;
 }
 
 /* End Slider */
@@ -572,95 +574,24 @@ footer h2{
 
 /* Action */
 
-.action{
-  background-color: #d1d1d1;
+.action {
   width: 100%;
+  text-align: center;
+  background-color: #fff;
+}
+
+.action .title2{
+  text-align: center;
+  margin: 0 auto;
+  width: fit-content;
 }
 
 .chart {
+  margin-top: 3rem;
   display: flex;
-  justify-content: space-between;
-  margin-top: 6rem;
+  justify-content: center;
 }
 
-.chart-right {
-  display: flex;
-  gap: 6rem;
-  flex-wrap: wrap;
-  width: 50%;
-}
-
-.chart-right .item {
-  position: relative;
-  width: 5rem;
-  height: 5rem;
-}
-
-.chart-right .item::before {
-  content: '';
-  width: 2rem;
-  height: 2rem;
-  position: absolute;
-  left: -50%;
-  bottom: 50%;
-  border-radius: 100%;
-}
-
-.chart-right .item:nth-child(1)::before {
-  background-color: red;
-}
-
-.chart-right .item:nth-child(2)::before {
-  background-color: green;
-}
-
-.chart-right .item:nth-child(3)::before {
-  background-color: yellow;
-}
-
-.chart-right .item:nth-child(4)::before {
-  background-color: orange;
-  
-}
-
-.chart-right .item:nth-child(5)::before {
-  background-color: #102E60;
-  
-}
-
-.action{
-  background-color: #d1d1d1;
-  width: 100%;
-  padding: 5rem 15rem;
-}
-
-.segment {
-  opacity: 0;
-  transform-origin: center;
-  /* plus d’animation ici */
-}
-
-/* On n’affecte l’animation qu’aux segments
-   quand .chart a reçu la classe .animate */
-.chart.animate .segment {
-  animation: appear 0.6s ease-out forwards;
-}
-
-.chart.animate .segment:nth-child(1) {
-  animation-delay: 0.2s;
-}
-.chart.animate .segment:nth-child(2) {
-  animation-delay: 0.4s;
-}
-.chart.animate .segment:nth-child(3) {
-  animation-delay: 0.8s;
-}
-.chart.animate .segment:nth-child(4) {
-  animation-delay: 1s;
-}
-.chart.animate .segment:nth-child(5) {
-  animation-delay: .8s;
-}
 
 @keyframes appear {
   from { opacity: 0; transform: scale(0.5) rotate(-90deg); }
@@ -676,15 +607,20 @@ footer h2{
 
 
 /* Qhse */
-
+.qhse{
+  width: 100%;
+  margin: 0 auto;
+  padding: 5rem 10rem;
+   background-color: #d1d1d1;
+}
 
 .qhse-elements {
   display: flex;
   gap: 2rem;
   flex-wrap:wrap;
   align-content: center;
-  justify-content:space-between;
   row-gap: 5rem;
+  justify-content: space-around;
 }
 
 .qhse-elements .element{
@@ -719,8 +655,8 @@ footer h2{
   cursor: pointer;
 }
 
-.qhse-elements .element:nth-child(6)::after{
-
+.qhse .title1, .qhse .title2{
+ 
 }
 
 .qhse-elements a{
@@ -1038,8 +974,8 @@ border: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #d1d1d1;
   z-index: 0;
+  padding: 5rem;
 }
 
 #projects h2{
