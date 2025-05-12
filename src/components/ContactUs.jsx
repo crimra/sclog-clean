@@ -1,30 +1,42 @@
-import React from 'react'
+import React from 'react';
 
 const ContactUs = () => {
   return (
-    <section className='contact-us'>
-        <div className="flex flex-col">
-            <p className='title2'>Prennez contact</p>
-            <p className=''>Vous avez un projet en tête ? <br />Nous serions ravis d'en discuter avec vous.</p>
-        </div>
-        <div className=''>
-            <form action="" className='flex flex-col gap-2'>
-                <div className='input-box'>
-                    <label htmlFor="name">Nom:</label>
-                    <input type="text" />
-                </div>
-                <div className='input-box'>
-                    <label htmlFor="email">Email</label>
-                    <input type="email" />
-                </div>
-                <div className='input-box'>
-                    <textarea type="text" placeholder='Votre message' rows={4} />
-                </div>
-                <button className='w-32 bg-[#1F458E] rounded-lg text-white'>Envoyer</button>
-            </form>
-        </div>
+    <section className="contact-us">
+      <div className="contact-info">
+        <p className="title2">Prenez contact</p>
+        <p>
+          Vous avez un projet en tête ? <br />
+          Nous serions ravis d'en discuter avec vous.
+        </p>
+      </div>
+      <div className="contact-form">
+        <form action="" className="flex flex-col gap-4">
+          <div className="input-box">
+        
+            <input type="text" id="name" name="name" placeholder="Votre nom" required />
+          </div>
+          <div className="input-box">
+            
+            <input type="email" id="email" name="email" placeholder="Votre email" required />
+          </div>
+          <div className="input-box">
+            
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Votre message"
+              rows={4}
+              required
+            ></textarea>
+          </div>
+          <button type="submit" className="submit-button">
+            Envoyer
+          </button>
+        </form>
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default ContactUs
+export default ContactUs;

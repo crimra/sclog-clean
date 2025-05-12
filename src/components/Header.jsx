@@ -48,7 +48,7 @@ const Header = () => {
             <SmoothScrollLink to="#h3se" active={activeSection === 'h3se'}>H3SE</SmoothScrollLink>
           </li>
           <li>
-            <SmoothScrollLink to="#projects" active={activeSection === 'projects'}>Projects</SmoothScrollLink>
+            <SmoothScrollLink to="#projects" active={activeSection === 'projects'}>Projets</SmoothScrollLink>
           </li>
           <li><Link to="/logistique">Logistique pétrolière</Link></li>
           <li><Link to="/rse">RSE</Link></li>

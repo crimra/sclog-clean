@@ -3,50 +3,31 @@ import { SliderData } from "./sliderData";
 
 const InfiniteSlider = () => {
   const containerRef = useRef(null);
-  const speed = 0.5; // Vitesse du scroll
 
   useEffect(() => {
     const container = containerRef.current;
 
     if (!container) return;
 
-    // effet infini
+    // Effet infini avec CSS
     const sliderContent = container.querySelector(".slider-track");
-    sliderContent.innerHTML += sliderContent.innerHTML;
+    sliderContent.innerHTML += sliderContent.innerHTML; // Duplique le contenu pour l'effet infini
 
-    let animationFrameId;
-    let scroll = 0;
-
-    const animate = () => {
-      scroll += speed;
-      if (scroll >= sliderContent.scrollWidth / 2) {
-        scroll = 0;
-      }
-      container.scrollLeft = scroll;
-      animationFrameId = requestAnimationFrame(animate);
+    return () => {
+      // Nettoyage si nécessaire
+      sliderContent.innerHTML = sliderContent.innerHTML.slice(0, sliderContent.innerHTML.length / 2);
     };
-
-    animate();
-
-    return () => cancelAnimationFrame(animationFrameId);
   }, []);
 
   return (
-    <div
-      ref={containerRef}
-      className="w-full overflow-hidden whitespace-nowrap slider-container"
-      style={{ height: "14rem" }}
-    >
-      <div className="slider-track flex gap-6">
+    <div ref={containerRef} className="slider-container">
+      <div className="slider-track">
         {SliderData.map((slide, index) => (
-          <div
-            key={index}
-            className="w-[400px] h-[400px] flex-shrink-0"
-          >
+          <div key={index} className="slider-item">
             <img
               src={slide.url}
-              alt={slide.alt}
-              className="w-full h-[50%] object-cover shadow-md"
+              alt={slide.alt || `Slide ${index + 1}`}
+              className="slider-image"
             />
           </div>
         ))}

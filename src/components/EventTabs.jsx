@@ -82,9 +82,10 @@ console.log("Image map keys:", Object.keys(imageMap));
         </div>
 
       {/* Description */}
-      <div className="mt-6 max-w-3xl mx-auto text-center text-gray-700 text-lg rse-text">
-        {activeTab.description}
+      <div className="mt-6 max-w-3xl mx-auto text-center text-gray-700 text-lg rse-text flex justify-center items-center">
+        <p>{activeTab.description}</p>
       </div>
+
     </section>
   );
 };

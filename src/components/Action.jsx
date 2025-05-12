@@ -33,23 +33,7 @@ const CustomLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, inde
         width={boxSize}
         height={boxSize}
       >
-        <div
-          xmlns="http://www.w3.org/1999/xhtml"
-          style={{
-            width: boxSize,
-            height: boxSize,
-            borderRadius: '50%',
-            background: 'rgba(0, 0, 0, 0.5)',
-            backdropFilter: 'blur(5px)',
-            WebkitBackdropFilter: 'blur(5px)',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            color: '#fff',
-            fontWeight: 'bold',
-            fontSize: '12px',
-          }}
-        >
+        <div xmlns="http://www.w3.org/1999/xhtml" className="custom-label">
           {data[index].value}%
         </div>
       </foreignObject>
@@ -76,7 +60,7 @@ const Action = () => {
       </p>
 
       <div className="chart">
-        <PieChart width={500} height={500}>
+        <PieChart width={500} height={500} aria-label="Répartition de l'actionnariat SCLOG">
           <Pie
             data={data}
             dataKey="value"
@@ -85,6 +69,7 @@ const Action = () => {
             outerRadius={180}
             labelLine={false}
             label={CustomLabel}
+            isAnimationActive={true} // Active l'animation
           >
             {data.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={entry.color} />

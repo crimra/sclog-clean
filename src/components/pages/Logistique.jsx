@@ -44,25 +44,44 @@ const Logistique = () => {
 
           <p>La logistique pétrolière au CONGO</p>
           <div className="schema"></div>
-          
+
         </div>
 
         <div className="big-carte">
           
             <p className='title2'>Réseau de dépôts SCLOG</p>
+
             <div className="carte">
+
               <div>
                 <img src="/assets/carte.svg" class="slide-in" />
               </div>
+
               <div className='carte-right'>
-                <img src="/assets/carte-legende.svg" class="slide-in-delay" />
+                
                 <div>
+                  <img src="/assets/route.svg" class="slide-in-delay" />
                   <p className='slide-in-delay'>Transferts assurés par voie routière</p>
+                </div>
+
+                <div>
+                  <img src="/assets/rail.svg" class="slide-in-delay" />
                   <p className='slide-in-delay'>Transferts assurés par voie ferroviaire</p>
+                </div>
+
+                <div>
+                  <img src="/assets/fluvial.svg" class="slide-in-delay" />
                   <p className='slide-in-delay'>Transferts assurés par voie fluviale</p>
                 </div>
+
+                <div>
+                  <img src="/assets/depot.svg" class="slide-in-delay" />
+                </div>
+
               </div>
+
             </div>
+
         </div>
 
     </section>
