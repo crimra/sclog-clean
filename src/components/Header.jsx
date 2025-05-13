@@ -38,8 +38,10 @@ const Header = () => {
       </button>
 
       <nav className={burgerOpen ? 'open' : ''}>
-        <ul className='flex text-[1rem] md:text-[0.9rem] sm:text-[0.8rem] flex-wrap'>
-          <li><Link to="/">Accueil</Link></li>
+        <ul className=''>
+          <li>
+            <Link to="/" className={activeSection === 'home' ? 'activeNavLink' : ''}>Accueil</Link>
+          </li>
           <li>
             <SmoothScrollLink to="#presentation" active={activeSection === 'presentation'}>Présentation</SmoothScrollLink>
           </li>
@@ -60,7 +62,6 @@ const Header = () => {
           <input type="text" placeholder='Recherche...' />
           <img src="/assets/search-icon.svg" alt="search icon" />
         </div>
-        
       </nav>
 
       
