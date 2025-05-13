@@ -74,11 +74,11 @@ const RecruitmentForm = () => {
         </div>
         <div>
           <label>Email</label>
-          <input type="email" name="email" required value={formData.email} onChange={handleChange} className="w-full p-2 border rounded" />
+          <input type="email" name="email" autoComplete="email" required value={formData.email} onChange={handleChange} className="w-full p-2 border rounded" />
         </div>
         <div>
           <label>Téléphone</label>
-          <input type="tel" name="phone" required value={formData.phone} onChange={handleChange} className="w-full p-2 border rounded" />
+          <input type="tel" name="phone" autoComplete="tel" required value={formData.phone} onChange={handleChange} className="w-full p-2 border rounded" />
         </div>
         <div>
           <label>Adresse</label>
@@ -178,7 +178,7 @@ const RecruitmentForm = () => {
       {/* CV */}
       <div>
         <label>CV (PDF)</label>
-        <input type="file" name="resume" accept=".pdf" onChange={handleChange} className="w-full download rounded" required />
+        <input type="file" name="resume" accept=".pdf" onChange={handleChange} className="w-full download rounded" required aria-label="CV (PDF)" />
       </div>
 
       {/* Motivation */}
@@ -202,7 +202,7 @@ const RecruitmentForm = () => {
         </label>
       </div>
 
-      <button type="submit" className="bg-[#1F458E] text-white px-6 py-2 rounded hover:bg-[#173779] transition">
+      <button type="submit" className="bg-[#1F458E] text-white px-6 py-2 rounded hover:bg-[#173779] transition w-full md:w-auto">
         📨 Envoyer ma candidature
       </button>
     </form>
