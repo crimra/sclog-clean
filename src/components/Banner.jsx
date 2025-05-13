@@ -1,22 +1,25 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Banner = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="banner">
       <div className="banner-elements">
         <div className="element">
-          <img src="/assets/banner-element1.svg" alt="Capital humain" className="slide-in" />
+          <img src="/assets/banner-element1.svg" alt={t('banner.human')} className="slide-in" />
           <p className="slide-in slide-in-delay">
-            <span>Capital humain</span>
-            <span>Plus de 130 Employés</span>
+            <span>{t('banner.human')}</span>
+            <span>{t('banner.humanValue')}</span>
           </p>
         </div>
         <div className="element separator"></div>
         <div className="element">
-          <img src="/assets/banner-element2.svg" alt="Sites" className="slide-in" />
+          <img src="/assets/banner-element2.svg" alt={t('banner.sites')} className="slide-in" />
           <p className="slide-in slide-in-delay">
-            <span>Sites</span>
-            <span>8 dépôts en activités pour un total de 97 000 m3 de capacités</span>
+            <span>{t('banner.sites')}</span>
+            <span>{t('banner.sitesValue')}</span>
           </p>
         </div>
       </div>

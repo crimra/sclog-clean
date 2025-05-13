@@ -1,0 +1,248 @@
+{
+  "nav": {
+    "home": "Home",
+    "presentation": "Presentation",
+    "h3se": "H3SE",
+    "projects": "Projects",
+    "logistique": "Oil Logistics",
+    "rse": "CSR",
+    "rejoindre": "Join Us",
+    "news": "News"
+  },
+  "search": "Search...",
+  "lang": {
+    "fr": "French",
+    "en": "English"
+  },
+  "footer": {
+    "siege": "Head Office",
+    "address": "Mpila Depot-BP 14 522",
+    "address2": "Liquid Hydrocarbons Depot BOULEVARD SASSOU NGUESSO, Republic of Congo",
+    "phone": "+242 06 660 45 00",
+    "email": "secretariat@sclog.cg",
+    "horaires": "Opening hours",
+    "hours": "7:30am - 5:30pm",
+    "follow": "Follow us",
+    "copyright": "©2025 by sOmedia"
+  },
+  "contact": {
+    "title": "Get in touch",
+    "intro": "Do you have a project in mind? <br />We would be happy to discuss it with you.",
+    "name": "Your name",
+    "email": "Your email",
+    "message": "Your message",
+    "send": "Send"
+  },
+  "recruitment": {
+    "title": "Application form",
+    "fullname": "Full Name",
+    "birthdate": "Birth date",
+    "maritalStatus": "Marital status",
+    "maritalStatusOptions": {
+      "": "-- Select --",
+      "single": "Single",
+      "married": "Married",
+      "divorced": "Divorced"
+    },
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "studies": "Last studies",
+    "diploma": "Diploma",
+    "school": "School",
+    "gradYear": "Year",
+    "experience": "Last professional experience",
+    "lastJob": "Position",
+    "company": "Company",
+    "jobDuration": "Duration",
+    "jobDescription": "Main duties",
+    "positionWanted": "Position wanted",
+    "positionOptions": {
+      "": "-- Select --",
+      "chauffeur": "Driver",
+      "logisticien": "Logistician",
+      "qhse": "QHSE Assistant",
+      "admin": "Administrative",
+      "other": "Other"
+    },
+    "contractType": "Contract type",
+    "contractTypeOptions": {
+      "": "-- Select --",
+      "cdi": "Permanent",
+      "cdd": "Fixed-term",
+      "intern": "Internship"
+    },
+    "availability": "Availability",
+    "availabilityOptions": {
+      "": "-- Select --",
+      "immediate": "Immediate",
+      "1month": "1 month",
+      "other": "Other"
+    },
+    "languages": "Languages spoken",
+    "languagesOptions": {
+      "fr": "French",
+      "en": "English",
+      "other": "Other"
+    },
+    "hasLicense": "Do you have a driving license?",
+    "hasLicenseOptions": {
+      "": "-- Select --",
+      "yes": "Yes",
+      "no": "No"
+    },
+    "resume": "CV (PDF)",
+    "motivation": "Cover letter (optional)",
+    "motivationPlaceholder": "Motivation",
+    "consent": "I agree that my data will be used for this recruitment.",
+    "submit": "📨 Send my application"
+  },
+  "hero": {
+    "main": "Your oil logistics partner in Congo",
+    "cta": "Discover"
+  },
+  "about": {
+    "title1": "About",
+    "title2": "Discover our history, vision and values",
+    "tabs": {
+      "presentation": "Presentation",
+      "vision": "Vision"
+    },
+    "presentationText": "SCLOG ensures the storage and bulk transport of liquid hydrocarbons throughout the Republic of Congo, while complying with the strictest safety and quality standards, as certified by ISSSRS Level 3 and JIG.",
+    "visionText": "To be the benchmark for operational excellence and innovation in the storage and logistics of liquid petroleum products in Congo and Central Africa."
+  },
+  "services": {
+    "title1": "Services",
+    "title2": "Discover the services we offer",
+    "title3": "Reliable and integrated logistics solutions",
+    "intro": "Thanks to its network of distributed depots and diversified logistics resources, SCLOG ensures smooth, secure and tailored management throughout the country.",
+    "camions": "Tanker trucks",
+    "wagons": "Tank wagons",
+    "barges": "Barges",
+    "cards": [
+      {
+        "title": "Storage",
+        "desc": "We store products from CORAF production and imports from SNPC and our clients on their behalf. For this, we have 8 oil depots throughout Congo."
+      },
+      {
+        "title": "Bulk transport",
+        "desc": "We transfer petroleum products between our 8 depots using various means: tanker trucks, tank wagons, and barges."
+      },
+      {
+        "title": "Tanker truck loading",
+        "desc": "Products stored on behalf of our clients are then loaded by us into tanker trucks at their request."
+      },
+      {
+        "title": "Ship or barge bunkering",
+        "desc": "Our services also extend to bunkering activities at the request of our clients who own products."
+      }
+    ]
+  },
+  "rse": {
+    "title": "Our societal commitment",
+    "intro": "At SCLOG, we firmly believe that our success goes hand in hand with our commitment to the community and the environment. Our CSR initiatives are designed to contribute positively to sustainable development and the well-being of local populations:",
+    "conclusion": "Each action reflects our commitment to building a caring and responsible future.",
+    "educationTitle": "Education",
+    "educationText": "Renovation and construction of classrooms in Loutété (2020-2022). Distribution of school kits and inauguration of new facilities at Antoine MILANDOU school in Ouesso in 2025.",
+    "healthTitle": "Health",
+    "healthText": "Donation of pharmaceutical kits and medical equipment to the Impfondo base hospital in 2023. Support for causes such as the fight against diabetes (MCPLC Association) and the promotion of sport and health.",
+    "solidarityTitle": "Solidarity",
+    "solidarityText": "Annual donations to hospices and orphanages, including actions such as the distribution of toys and food in 2024."
+  },
+  "logistique": {
+    "title": "Oil Logistics in Congo",
+    "section1": "Oil logistics in Congo is based on a structured process ensuring fuel supply throughout the country. Products come either from the CORAF refinery or are imported by marketers using ships and barges by sea or river. These petroleum products are received and stored in the import depots of Pointe-Noire and Brazzaville.",
+    "section2": "SCLOG then ensures their transfer to inland depots by tanker trucks, barges, or tank wagons. This logistics organization efficiently serves the different regions, ensuring a constant supply even in the most remote areas.",
+    "section3": "At the request of its clients (marketers) such as SNPC-D, TotalEnergies, Afric, Puma, X-Oil, etc., SCLOG loads the products into tanker trucks. These companies handle the final distribution to service stations, industrial clients, and other strategic infrastructures, thus ensuring a constant supply throughout the country.",
+    "schemaTitle": "Oil logistics in CONGO",
+    "carteTitle": "SCLOG depot network",
+    "route": "Transfers by road",
+    "rail": "Transfers by rail",
+    "fluvial": "Transfers by river"
+  },
+  "qhse": {
+    "title1": "H3SEQ",
+    "title2": "Our QHSE Policy",
+    "points": [
+      "Implementation of an H3SE policy",
+      "Installation of piezometers in depots to monitor groundwater quality",
+      "Implementation of an environmental program",
+      "Implementation of a business continuity plan (BCP)",
+      "JIG audit every 2 years on sites receiving Jet-A1 (aviation fuel)"
+    ],
+    "download": "Download our H3SE commitment"
+  },
+  "join": {
+    "title": "HR Policy and Recruitment",
+    "steps": [
+      {
+        "title": "Recruitment decision",
+        "desc": "SCLOG develops its recruitments taking into account the needs identified by each department and budgetary objectives. Any request is validated by General Management before implementation."
+      },
+      {
+        "title": "Recruitment process",
+        "desc": "Job offers are carefully drafted and published through various channels. The selection includes written tests and interviews. Selected candidates complete a 6-month trial period before permanent employment, followed by full integration."
+      },
+      {
+        "title": "Integration",
+        "desc": "Each hired employee receives the SCLOG welcome booklet, including our code of ethics and internal regulations. SCLOG also handles procedures with CNSS and ACPE for administrative compliance."
+      }
+    ]
+  },
+  "news": {
+    "title": "News",
+    "noNews": "No news at the moment."
+  },
+  "errors": {
+    "404": "Page not found",
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address",
+    "fileTooLarge": "File too large",
+    "onlyPdf": "Only PDF files are accepted"
+  },
+  "buttons": {
+    "back": "Back",
+    "submit": "Send",
+    "apply": "Apply",
+    "seeMore": "See more"
+  },
+  "action": {
+    "title": "SCLOG Shareholding",
+    "intro": "The Joint Logistics Company, SCLOG, is a public limited company whose shareholding is as follows:",
+    "total": "Total",
+    "puma": "Puma",
+    "xoil": "X-Oil",
+    "gpl": "GPL",
+    "snpc": "SNPC"
+  },
+  "banner": {
+    "human": "Human capital",
+    "humanValue": "Over 130 employees",
+    "sites": "Sites",
+    "sitesValue": "8 active depots for a total capacity of 97,000 m3"
+  },
+  "eventTabs": {
+    "orphTitle": "SCLOG & Orphanage",
+    "orphDesc": "The initiative once again confirms the company's commitment to supporting Congolese schools ... (your full translated text here)",
+    "cfcoTitle": "CFCO Donation 2024",
+    "cfcoDesc": "CFCO donation ceremony April 30, 2024",
+    "louteteTitle": "Loutété",
+    "louteteDesc": "Renovation and construction of classrooms in Loutété, with latrines and benches, project carried out from 2020 to 2022.",
+    "ouessoTitle": "Ouesso",
+    "ouessoDesc": "Renovation of a primary school in Ouesso."
+  },
+  "projects": {
+    "title": "Projects",
+    "done": "Completed",
+    "inProgress": "In progress...",
+    "inProgressTitle": "Construction of a double-walled super tank – R05 (15,000 m3) in Pointe-Noire.",
+    "list": [
+      "Construction of a double-walled diesel tank R04 (15,000 m3) in Pointe-Noire",
+      "Construction of fire protection systems (DCI) in the depots of Brazzaville, Pointe-Noire, Ouesso and Oyo.",
+      "Installation of motorized valves for secure and optimized management of transfer and storage operations.",
+      "Rehabilitation of tanks in all SCLOG depots.",
+      "Modernization of the metering system in Pointe-Noire and Ouesso.",
+      "Modernization of a pump room and truck loading station, resizing of piping – Impfondo depot."
+    ]
+  }
+}

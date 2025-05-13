@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Tabs = () => {
+  const { t } = useTranslation();
   const [active, setActive] = React.useState(1);
   const title1Ref = useRef(null);
   const title2Ref = useRef(null);
@@ -49,10 +51,10 @@ const Tabs = () => {
   return (
     <section className="about" id="presentation">
       <p ref={title1Ref} className="title1 outfit">
-        A propos
+        {t('about.title1')}
       </p>
       <p ref={title2Ref} className="title2 outfit">
-        Découvrez notre histoire, notre vision et nos valeurs
+        {t('about.title2')}
       </p>
       <div className="tabs jost">
         {/* Présentation */}
@@ -60,29 +62,23 @@ const Tabs = () => {
           <div className="tabs-header outfit">
             <div className="tab-header-text">
               <div
-                onClick={() => {
-                  setActive(1);
-                }}
+                onClick={() => setActive(1)}
                 className={`tab-item ${active === 1 ? 'active' : ''}`}
               >
-                Présentation
+                {t('about.tabs.presentation')}
               </div>
               <div
-                onClick={() => {
-                  setActive(2);
-                }}
+                onClick={() => setActive(2)}
                 className={`tab-item ${active === 2 ? 'active' : ''}`}
               >
-                Vision
+                {t('about.tabs.vision')}
               </div>
               <p className="slide-in">
-                SCLOG assure le stockage et le transport en masse des hydrocarbures liquides à travers
-                l'ensemble de la République du Congo, tout en respectant les normes de sécurité et de
-                qualité les plus strictes, attestées par ses certifications ISSSRS Niveau 3 et JIG.
+                {t('about.presentationText')}
               </p>
             </div>
             <div className="img-container">
-              <img src="/assets/img/presentation.jpg" alt="Présentation" />
+              <img src="/assets/img/presentation.jpg" alt={t('about.tabs.presentation')} />
             </div>
           </div>
         </div>
@@ -92,29 +88,23 @@ const Tabs = () => {
           <div className="tabs-header outfit">
             <div className="tab-header-text">
               <div
-                onClick={() => {
-                  setActive(1);
-                }}
+                onClick={() => setActive(1)}
                 className={`tab-item ${active === 1 ? 'active' : ''}`}
               >
-                Présentation
+                {t('about.tabs.presentation')}
               </div>
               <div
-                onClick={() => {
-                  setActive(2);
-                }}
+                onClick={() => setActive(2)}
                 className={`tab-item ${active === 2 ? 'active' : ''}`}
               >
-                Vision
+                {t('about.tabs.vision')}
               </div>
               <p className="slide-in">
-                Être la référence en termes d'excellence opérationnelle et d'innovation dans le secteur
-                du stockage et de la logistique des produits pétroliers liquides au Congo et en Afrique
-                centrale.
+                {t('about.visionText')}
               </p>
             </div>
             <div className="img-container">
-              <img src="/assets/img/team.jpg" alt="Vision" />
+              <img src="/assets/img/team.jpg" alt={t('about.tabs.vision')} />
             </div>
           </div>
         </div>

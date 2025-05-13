@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
+  const { t } = useTranslation();
+  const projects = t('projects.list', { returnObjects: true });
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentInProgressIndex, setCurrentInProgressIndex] = useState(0);
-
-  const projects = [
-    "Construction d’un réservoir double paroi gazole R04 (15000 m3) à Pointe-Noire",
-    "Construction des défenses contre incendie (DCI) dans les dépôts de Brazzaville, Pointe-Noire, Ouesso et Oyo.",
-    "Installation de vannes motorisées pour la gestion sécurisée et optimisée des opérations de transfert et de stockage du produit.",
-    "Réhabilitation des réservoirs dans tous les dépôts SCLOG.",
-    "Modernisation du système de comptage à Pointe-Noire et Ouesso.",
-    "Modernisation d’une pomperie et poste de chargement camion, redimensionnement de la tuyauterie – Dépôt d’Impfondo.",
-  ];
 
   const inProgressImages = ["pro", "pro2", "pro3"];
 
@@ -42,8 +36,8 @@ const Projects = () => {
 
   return (
     <section id="projects" className="projects">
-      <h2 className="title2">Projets</h2>
-      <h1 className="title3">Réalisés</h1>
+      <h2 className="title2">{t('projects.title')}</h2>
+      <h1 className="title3">{t('projects.done')}</h1>
 
       <div className="slider">
         <FaArrowLeft className="projects-arrows" onClick={handlePrev} />
@@ -53,7 +47,7 @@ const Projects = () => {
               <div className="small-img">
                 <img
                   src={`/assets/img/project${currentIndex + 1}.jpg`}
-                  alt={`Projet ${currentIndex + 1}`}
+                  alt={`Project ${currentIndex + 1}`}
                 />
               </div>
               <div className="card-text">
@@ -67,16 +61,16 @@ const Projects = () => {
 
       {/* Section "En cours" */}
       <div className="in-progress">
-        <h1 className="title3">En cours...</h1>
+        <h1 className="title3">{t('projects.inProgress')}</h1>
         <div className="content">
-          <h3>Construction d’un réservoir double paroi super – R05 (15000 m3) à Pointe-Noire.</h3>
+          <h3>{t('projects.inProgressTitle')}</h3>
           <div className="main-card">
             {/*<FaArrowLeft className="projects-arrows" onClick={handleInProgressPrev} />*/}
             {inProgressImages.map((img, index) => (
               <div key={index} className="card">
                 <img
                   src={`/assets/img/${img}.jpeg`}
-                  alt={`Projet en cours ${index + 1}`}
+                  alt={`In progress project ${index + 1}`}
                 />
               </div>
             ))}

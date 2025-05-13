@@ -1,0 +1,247 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "presentation": "Présentation",
+    "h3se": "H3SE",
+    "projects": "Projets",
+    "logistique": "Logistique pétrolière",
+    "rse": "RSE",
+    "rejoindre": "Nous rejoindre",
+    "news": "Actualité"
+  },
+  "search": "Recherche...",
+  "lang": {
+    "fr": "Français",
+    "en": "Anglais"
+  },
+  "footer": {
+    "siege": "Siège",
+    "address": "Dépôt de Mpila-BP 14 522",
+    "address2": "Dépôt des Hydrocarbures liquides BOULEVARD SASSOU NGUESSO, République du Congo",
+    "phone": "+ 242 06 660 45 00",
+    "email": "secretariat@sclog.cg",
+    "horaires": "Horaires",
+    "hours": "7h30 - 17h30",
+    "follow": "Suivez-nous",
+    "copyright": "©2025 par sOmedia"
+  },
+  "contact": {
+    "title": "Prenez contact",
+    "intro": "Vous avez un projet en tête ? <br />Nous serions ravis d'en discuter avec vous.",
+    "name": "Votre nom",
+    "email": "Votre email",
+    "message": "Votre message",
+    "send": "Envoyer"
+  },
+  "recruitment": {
+    "title": "Formulaire de candidature",
+    "fullname": "Nom & Prénom",
+    "birthdate": "Date de naissance",
+    "maritalStatus": "Statut matrimonial",
+    "maritalStatusOptions": {
+      "": "-- Sélectionner --",
+      "single": "Célibataire",
+      "married": "Marié(e)",
+      "divorced": "Divorcé(e)"
+    },
+    "email": "Email",
+    "phone": "Téléphone",
+    "address": "Adresse",
+    "studies": "Dernières études",
+    "diploma": "Diplôme",
+    "school": "Établissement",
+    "gradYear": "Année",
+    "experience": "Dernière expérience professionnelle",
+    "lastJob": "Poste",
+    "company": "Entreprise",
+    "jobDuration": "Durée",
+    "jobDescription": "Fonctions principales",
+    "positionWanted": "Poste recherché",
+    "positionOptions": {
+      "": "-- Sélectionner --",
+      "chauffeur": "Chauffeur",
+      "logisticien": "Logisticien",
+      "qhse": "QHSE Assistant",
+      "admin": "Administratif",
+      "other": "Autre"
+    },
+    "contractType": "Type de contrat",
+    "contractTypeOptions": {
+      "": "-- Sélectionner --",
+      "cdi": "CDI",
+      "cdd": "CDD",
+      "intern": "Stage"
+    },
+    "availability": "Disponibilité",
+    "availabilityOptions": {
+      "": "-- Sélectionner --",
+      "immediate": "Immédiate",
+      "1month": "1 mois",
+      "other": "Autre"
+    },
+    "languages": "Langues parlées",
+    "languagesOptions": {
+      "fr": "Français",
+      "en": "Anglais",
+      "other": "Autre"
+    },
+    "hasLicense": "Avez-vous un permis de conduire ?",
+    "hasLicenseOptions": {
+      "": "-- Sélectionner --",
+      "yes": "Oui",
+      "no": "Non"
+    },
+    "resume": "CV (PDF)",
+    "motivation": "Lettre de motivation (optionnelle)",
+    "motivationPlaceholder": "Motivation",
+    "consent": "J'accepte que mes données soient utilisées dans le cadre de ce recrutement.",
+    "submit": "📨 Envoyer ma candidature"
+  },
+  "hero": {
+    "main": "Votre partenaire logistique pétrolière au Congo",
+    "cta": "Découvrir"
+  },
+  "about": {
+    "title1": "À propos",
+    "title2": "Découvrez notre histoire, notre vision et nos valeurs",
+    "tabs": {
+      "presentation": "Présentation",
+      "vision": "Vision"
+    },
+    "presentationText": "SCLOG assure le stockage et le transport en masse des hydrocarbures liquides à travers l'ensemble de la République du Congo, tout en respectant les normes de sécurité et de qualité les plus strictes, attestées par ses certifications ISSSRS Niveau 3 et JIG.",
+    "visionText": "Être la référence en termes d'excellence opérationnelle et d'innovation dans le secteur du stockage et de la logistique des produits pétroliers liquides au Congo et en Afrique centrale."
+  },
+  "services": {
+    "title1": "Services",
+    "title2": "Découvrez les services que nous proposons",
+    "title3": "Des solutions logistiques fiables et intégrées",
+    "intro": "Grâce à son réseau de dépôts répartis et à des moyens logistiques diversifiés, la SCLOG assure une gestion fluide, sécurisée et adaptée sur l’ensemble du territoire national.",
+    "camions": "Camions citernes",
+    "wagons": "Wagons citernes",
+    "barges": "Barges",
+    "cards": [
+      {
+        "title": "Stockage",
+        "desc": "Nous stockons les produits issus de la production de la CORAF et des importations de la SNPC et de nos clients pour le compte de ces derniers. Pour cela, nous disposons de 8 dépôts pétroliers répartis sur l’ensemble du Congo."
+      },
+      {
+        "title": "Transport massif",
+        "desc": "Nous réalisons le transfert de produits pétroliers entre nos 8 dépôts grâce à différents moyens : les camions citernes, les wagons citernes et les barges."
+      },
+      {
+        "title": "Chargement de Camions-citernes",
+        "desc": "Les produits stockés pour le compte de nos clients sont ensuite chargés par nos soins dans des camions citernes à la demande de ces derniers."
+      },
+      {
+        "title": "Soutage de navires ou barges",
+        "desc": "Nos prestations s’étendent également à l’activité de soutage sur demande de nos clients détenteurs de produits."
+      }
+    ]
+  },
+  "rse": {
+    "title": "Notre engagement sociétal",
+    "intro": "Chez SCLOG, nous croyons fermement que notre succès va de pair avec notre engagement envers la communauté et l'environnement. Nos initiatives RSE sont conçues pour contribuer positivement au développement durable et au bien-être des populations locales:",
+    "conclusion": "Chaque action reflète notre engagement à bâtir un avenir solidaire et responsable.",
+    "educationTitle": "Éducation",
+    "educationText": "Réhabilitation et construction de salles de classe à Loutété (2020-2022). Remise de kits scolaires et inauguration de nouvelles infrastructures à l’école Antoine MILANDOU de Ouesso en 2025.",
+    "healthTitle": "Santé",
+    "healthText": "Don de kits pharmaceutiques et de matériel médical à l’hôpital de base d'Impfondo en 2023. Soutien de causes en faveur de la lutte contre le diabète (Association MCPLC) et la promotion du Sport et de la santé.",
+    "solidarityTitle": "Solidarité",
+    "solidarityText": "Dons annuels aux hospices et orphelinats, incluant des actions comme la distribution de jouets et de vivres en 2024."
+  },
+  "logistique": {
+    "title": "Logistique Pétrolière du Congo",
+    "section1": "La logistique pétrolière au Congo repose sur un processus structuré garantissant l'approvisionnement en carburants à travers le pays. Les produits proviennent soit de la raffinerie CORAF, soit sont importés par les marketeurs à l’aide de navires et barges par voie maritime ou fluviale. Ces produits pétroliers sont réceptionnés et stockés dans les dépôts d'importation de Pointe-Noire et Brazzaville.",
+    "section2": "La SCLOG assure ensuite leur transfert vers les dépôts intérieurs par camions-citernes, barges ou wagons-citernes. Cette organisation logistique permet de desservir efficacement les différentes régions, garantissant un approvisionnement constant, même dans les zones les plus reculées.",
+    "section3": "À la demande de ses clients (marketeurs) tels que SNPC-D, TotalEnergies, Afric, Puma, X-Oil,… la SCLOG charge les produits dans des camions-citernes.  Ces entreprises prennent en charge la distribution finale vers les stations-service, les clients industriels et d'autres infrastructures stratégiques, garantissant ainsi un approvisionnement constant sur tout le territoire.",
+    "schemaTitle": "La logistique pétrolière au CONGO",
+    "carteTitle": "Réseau de dépôts SCLOG",
+    "route": "Transferts assurés par voie routière",
+    "rail": "Transferts assurés par voie ferroviaire",
+    "fluvial": "Transferts assurés par voie fluviale"
+  },
+  "qhse": {
+    "title": "Qualité, Hygiène, Sécurité, Environnement",
+    "policy": "Notre politique QHSE vise l’excellence opérationnelle et la sécurité de tous.",
+    "points": [
+      "Mise en place d’une politique H3SE",
+      "Mise en place de piézomètres dans les dépôts pour assurer le suivi de la qualité des eaux souterraines",
+      "Mise en place d’un programme environnemental",
+      "Mise en place d’un plan de continuité d’activité (PCA)",
+      "Audit JIG tous les 2 ans sur les sites recevant du Jet-A1 (carburant aviation)"
+    ]
+  },
+  "join": {
+    "title": "Politique RH et recrutement",
+    "steps": [
+      {
+        "title": "Décision de recrutement",
+        "desc": "La SCLOG élabore ses recrutements en prenant en compte les besoins identifiés par chaque direction et les objectifs budgétaires. Toute demande est validée par la Direction Générale avant d'être mise en œuvre."
+      },
+      {
+        "title": "Processus de recrutement",
+        "desc": "Les offres d'emploi sont soigneusement rédigées et publiées via divers canaux. La sélection inclut des tests écrits et des entretiens. Les candidats retenus effectuent une période d'essai de 6 mois avant l'embauche définitive, suivie d'une intégration complète."
+      },
+      {
+        "title": "Intégration",
+        "desc": "Chaque agent embauché reçoit le livret d'accueil de la SCLOG, comprenant notre code éthique et le règlement intérieur en lieu. La SCLOG assure également les démarches auprès de la CNSS et de l'ACPE pour la conformité administrative."
+      }
+    ]
+  },
+  "news": {
+    "title": "Actualités",
+    "noNews": "Aucune actualité pour le moment."
+  },
+  "action": {
+    "title": "Actionnariat SCLOG",
+    "intro": "La Société Commune de Logistique, SCLOG, est une société anonyme dont l’actionnariat est composé comme suit :",
+    "total": "Total",
+    "puma": "Puma",
+    "xoil": "X-Oil",
+    "gpl": "GPL",
+    "snpc": "SNPC"
+  },
+  "banner": {
+    "human": "Capital humain",
+    "humanValue": "Plus de 130 Employés",
+    "sites": "Sites",
+    "sitesValue": "8 dépôts en activités pour un total de 97 000 m3 de capacités"
+  },
+  "errors": {
+    "404": "Page non trouvée",
+    "required": "Ce champ est requis",
+    "invalidEmail": "Adresse email invalide",
+    "fileTooLarge": "Fichier trop volumineux",
+    "onlyPdf": "Seuls les fichiers PDF sont acceptés"
+  },
+  "buttons": {
+    "back": "Retour",
+    "submit": "Envoyer",
+    "apply": "Postuler",
+    "seeMore": "Voir plus"
+  },
+  "eventTabs": {
+    "orphTitle": "SCLOG & Orphelinat",
+    "orphDesc": "L’initiative confirme à nouveau la volonté de cette entreprise à soutenir l’école congolaise ... (ton texte complet ici)",
+    "cfcoTitle": "Don CFCO 2024",
+    "cfcoDesc": "Remise don CFCO 30 avril 2024",
+    "louteteTitle": "Loutété",
+    "louteteDesc": "Réhabilitation et construction de salles de classe à Loutété, avec latrines et tables-bancs, projet réalisé de 2020 à 2022.",
+    "ouessoTitle": "Ouesso",
+    "ouessoDesc": "Réhabilitation d'une école primaire à Ouesso."
+  },
+  "projects": {
+    "title": "Projets",
+    "done": "Réalisés",
+    "inProgress": "En cours...",
+    "inProgressTitle": "Construction d’un réservoir double paroi super – R05 (15000 m3) à Pointe-Noire.",
+    "list": [
+      "Construction d’un réservoir double paroi gazole R04 (15000 m3) à Pointe-Noire",
+      "Construction des défenses contre incendie (DCI) dans les dépôts de Brazzaville, Pointe-Noire, Ouesso et Oyo.",
+      "Installation de vannes motorisées pour la gestion sécurisée et optimisée des opérations de transfert et de stockage du produit.",
+      "Réhabilitation des réservoirs dans tous les dépôts SCLOG.",
+      "Modernisation du système de comptage à Pointe-Noire et Ouesso.",
+      "Modernisation d’une pomperie et poste de chargement camion, redimensionnement de la tuyauterie – Dépôt d’Impfondo."
+    ]
+  }
+}
