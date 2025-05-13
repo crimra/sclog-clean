@@ -173,18 +173,14 @@ nav ul li a:hover {
   color: #FFF;
   border: none;
   outline: none;
-  padding: 8px;
+  padding: 4px;
   font-size: 1rem;
-}
-
-.search-box input:active {
-  border: none;
-  outline: none;
+  width: 60%; /* Largeur ajustée pour mobile */
 }
 
 .search-box img {
   width: 15px;
-  margin: 10px;
+  margin-left: 10px;
 }
 
 /* end header */
@@ -463,6 +459,15 @@ nav ul li a:hover {
     flex: 1 1 100%; /* Chaque carte prend toute la largeur */
     max-width: 100%; /* Supprime la largeur fixe */
   }
+
+  .services{
+    padding: 2rem;
+  }
+
+   .services .title2{
+    width: 100%;
+   }
+
 }
 
 @media (max-width: 768px) {
@@ -662,8 +667,7 @@ nav ul li a:hover {
   }
 }
 
-/* footer */
-
+/* Footer */
 footer {
   background-color: #1F458E;
   color: #fff;
@@ -672,36 +676,87 @@ footer {
 
 footer .footer-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Place les éléments aux extrémités */
+  align-items: flex-start; /* Aligne les éléments en haut */
+  gap: 2rem;
+  flex-wrap: wrap; /* Permet l'empilement sur petits écrans */
+}
+
+footer .footer-container .left,
+footer .footer-container .right {
+  flex: 1;
+  min-width: 300px; /* Largeur minimale pour éviter l'écrasement */
 }
 
 footer .footer-container .left {
-  width: 50%;
+  text-align: left; /* Aligne le contenu à gauche */
 }
 
-.footer-container .left p {
-  margin: .5rem 0;
+footer .footer-container .right {
+  text-align: right; /* Aligne le contenu à droite */
 }
 
-.footer-container .right p {
-  margin: 1rem 0;
+footer .footer-container h2 {
+  font-size: 1.4rem;
+  text-decoration: underline;
+  margin-bottom: 1rem;
 }
 
-.footer-container .right img {
+footer .footer-container p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+footer .footer-container a {
+  display: inline-block;
   margin-top: 1rem;
+  transition: transform 0.3s ease;
+}
+
+footer .footer-container a:hover {
+  transform: scale(1.1); /* Agrandit légèrement l'icône au survol */
 }
 
 footer .bottom {
-  margin-top: 5rem;
+  margin-top: 3rem;
   text-align: center;
+  font-size: 0.9rem;
+  color: #ccc;
 }
 
-footer h2{
-  font-size: 1.4rem;
-  text-decoration: underline;
-}
+/* Responsive styles */
+@media (max-width: 768px) {
+  footer {
+    padding: 2rem;
+  }
 
-/* end footer */
+  footer .footer-container {
+    flex-direction: column; /* Empile les colonnes */
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .footer-container .left,
+  footer .footer-container .right {
+    width: 100%; /* Chaque colonne prend toute la largeur */
+  }
+  footer .footer-container .right 
+  {
+    text-align: left; /* Aligne le contenu au centre */
+  }
+  footer .footer-container h2 {
+    font-size: 1.2rem;
+  }
+
+  footer .footer-container p {
+    font-size: 0.9rem;
+  }
+
+  footer .bottom {
+    font-size: 0.8rem;
+  }
+}
 
 /* Slider */
 
@@ -1671,11 +1726,18 @@ nav ul {
   display: flex; /* affichée sur desktop */
 }
 
-/* --- Responsive --- */
+/* --- Responsive Header/Nav --- */
 @media (max-width: 1180px) {
   header {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
+    gap: 1rem;
+  }
+
+  .logo img {
+    height: 4rem;
   }
 
   .burger {
@@ -1686,16 +1748,20 @@ nav ul {
     position: absolute;
     top: 100%;
     right: 0;
+    left: 0;
     background-color: #1F458E;
-    width: 100%;
+    width: 100vw;
     max-height: 0;
     overflow: hidden;
     flex-direction: column;
     transition: max-height 0.3s ease-in-out;
+    display: flex !important;
+    z-index: 100;
   }
 
   nav.open {
-    max-height: 500px; /* affiche le menu */
+    max-height: 500px;
+    
   }
 
   nav ul {
@@ -1705,38 +1771,62 @@ nav ul {
     padding: 1rem 0;
   }
 
+
   .search-box {
-    display: none; /* cachée sur mobile */
+    display: flex;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 3rem;
+    width: auto;
+  }
+  nav ul {
+    gap: 1rem;
+  }
+  nav ul li a {
+    font-size: 0.9rem;
   }
 }
 
 /* Responsive : ajustements supplémentaires en dessous de 768px */
 @media (max-width: 768px) {
-  .about {
-    padding: 2rem; /* Réduit encore le padding */
-  }
-
+}
   .about .title1 {
-    font-size: 1.2rem; /* Réduit la taille du titre */
-  }
-
-  .about .title2 {
-    font-size: 1.5rem; /* Réduit la taille du sous-titre */
-    width: 100%; /* S'assure que le texte ne dépasse pas */
-  }
-
-  .about .tabs-header {
-    gap: 1rem; /* Réduit l'espacement entre les éléments */
-  }
-
-  .about .tab-header-text p {
-    font-size: 0.9rem; /* Réduit encore la taille du texte */
-  }
+  font-size: 1.2rem; /* Réduit la taille du titre */
 }
 
-/* End Media query */
+.about {
+  padding: 2rem; /* Réduit encore le padding */
+}
 
-/* Custom Label */
+.about .title2 {
+  font-size: 1.5rem; /* Réduit la taille du sous-titre */
+  width: 100%; /* S'assure que le texte ne dépasse pas */
+}
+
+.about .tabs-header {
+  gap: 1rem; /* Réduit l'espacement entre les éléments */
+}
+
+.about .tab-header-text p {
+  font-size: 0.9rem; /* Réduit encore la taille du texte */
+}
+
+nav ul {
+  gap: 1rem; /* Réduit l'espacement entre les liens */
+}
+
+nav ul li a {
+  font-size: 0.9rem; /* Réduit la taille de la police */
+}
+
+
+/* End Media query */
+  
+/* Custom Label */ /* Masque le menu langue sur mobile */
 .custom-label {
   width: 40px;
   height: 40px;
@@ -1750,3 +1840,4 @@ nav ul {
   font-weight: bold;
   font-size: 12px;
 }
+

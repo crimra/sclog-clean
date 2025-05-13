@@ -20,7 +20,6 @@ const Header = () => {
 
   const [burgerOpen, setBurgerOpen] = useState(false);
 
-  
   return (
     <header className='outfit z-50 relative'>
       <span className='logo'>
@@ -30,13 +29,13 @@ const Header = () => {
       <button
         className={`burger ${burgerOpen ? 'open' : ''}`}
         onClick={() => setBurgerOpen(prev => !prev)}
+        aria-label="Menu"
+        aria-expanded={burgerOpen}
       >
         <span></span>
         <span></span>
         <span></span>
       </button>
-
-
 
       <nav className={burgerOpen ? 'open' : ''}>
         <ul className='flex text-[1rem] md:text-[0.9rem] sm:text-[0.8rem] flex-wrap'>
@@ -55,12 +54,16 @@ const Header = () => {
           <li><Link to="/rejoindre">Nous rejoindre</Link></li>
           <li><Link to="/news">Actualité</Link></li>
         </ul>
+
+        {/* Search bar intégrée dans le menu burger */}
+        <div className="search-box mt-4">
+          <input type="text" placeholder='Recherche...' />
+          <img src="/assets/search-icon.svg" alt="search icon" />
+        </div>
+        
       </nav>
 
-      <div className="search-box">
-        <input type="text" placeholder='Recherche...' />
-        <img src="/assets/search-icon.png" alt="search icon" />
-      </div>
+      
 
       {/* Menu Langue */}
       <div className="relative">
