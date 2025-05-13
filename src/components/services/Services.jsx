@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Services = () => {
+  const { t } = useTranslation();
   const [camions, setCamions] = useState(0);
   const [wagons, setWagons] = useState(0);
   const [barges, setBarges] = useState(0);
@@ -52,79 +54,45 @@ const Services = () => {
     };
   }, []);
 
+  const cards = t('services.cards', { returnObjects: true });
+
   return (
     <section className="services">
       <article>
         <div className="left">
-          <p className="title1">Services</p>
-          <p className="title2">Découvrez les services que nous proposons</p>
-          <p className="title3 slide-in">Des solutions logistiques fiables et intégrées</p>
+          <p className="title1">{t('services.title1')}</p>
+          <p className="title2">{t('services.title2')}</p>
+          <p className="title3 slide-in">{t('services.title3')}</p>
           <p className="slide-in">
-            Grâce à son réseau de dépôts répartis et à des moyens logistiques diversifiés, la SCLOG
-            assure une gestion fluide, sécurisée et adaptée sur l’ensemble du territoire national.
+            {t('services.intro')}
           </p>
         </div>
         <div className="right jost" ref={numbersRef}>
           <div>
             <p className="huge-num">{camions}</p>
-            <p>Camions citernes</p>
+            <p>{t('services.camions')}</p>
           </div>
           <div>
             <p className="huge-num">{wagons}</p>
-            <p>Wagons citernes</p>
+            <p>{t('services.wagons')}</p>
           </div>
           <div>
             <p className="huge-num">{barges.toString().padStart(2, '0')}</p>
-            <p>Barges</p>
+            <p>{t('services.barges')}</p>
           </div>
         </div>
       </article>
 
       <article>
-        <div className="service-card slide-down">
-          <span>
-            <img src="/assets/service-check.svg" alt="check icon" />
-          </span>
-          <p className="title3">Stockage</p>
-          <p>
-            Nous stockons les produits issus de la production de la CORAF et des importations de la
-            SNPC et de nos clients pour le compte de ces derniers. Pour cela, nous disposons de 8
-            dépôts pétroliers répartis sur l’ensemble du Congo.
-          </p>
-        </div>
-
-        <div className="service-card slide-down slide-delay">
-          <span>
-            <img src="/assets/service-check.svg" alt="check icon" />
-          </span>
-          <p className="title3">Transport massif</p>
-          <p>
-            Nous réalisons le transfert de produits pétroliers entre nos 8 dépôts grâce à différents
-            moyens : les camions citernes, les wagons citernes et les barges.
-          </p>
-        </div>
-
-        <div className="service-card slide-down">
-          <span>
-            <img src="/assets/service-check.svg" alt="check icon" />
-          </span>
-          <p className="title3">Chargement de Camions-citernes</p>
-          <p>
-            Les produits stockés pour le compte de nos clients sont ensuite chargés par nos soins
-            dans des camions citernes à la demande de ces derniers.
-          </p>
-        </div>
-
-        <div className="service-card slide-down slide-delay">
-          <span>
-            <img src="/assets/service-check.svg" alt="check icon" />
-          </span>
-          <p className="title3">Soutage de navires ou barges</p>
-          <p>
-            Nos prestations s’étendent également à l’activité de soutage sur demande de nos clients
-            détenteurs de produits.
-          </p>
-        </div>
+        {cards.map((card, idx) => (
+          <div className={`service-card slide-down${idx % 2 === 1 ? ' slide-delay' : ''}`} key={idx}>
+            <span>
+              <img src="/assets/service-check.svg" alt="check icon" />
+            </span>
+            <p className="title3">{card.title}</p>
+            <p>{card.desc}</p>
+          </div>
+        ))}
       </article>
     </section>
   );
