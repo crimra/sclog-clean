@@ -41,8 +41,9 @@ body {
   margin: 0 auto 0 auto;
   padding: 5rem 10rem;
   background-color: #fff;
-
 }
+
+
 
 /* Police */
 
@@ -79,7 +80,7 @@ body {
   color: #1F458E;
   position: relative;
   font-weight: bold;
-  margin: 2rem 0 5.6rem 0;
+  margin: 2rem 0;
   width: 67%;
   opacity: 0; /* Assure que l'élément est invisible au départ */
   animation: fadeInLeftToRight 1.5s ease-in-out forwards; /* Applique l'animation */
@@ -430,6 +431,7 @@ nav ul li a:active {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+
 
 .service-card img {
   max-width: 3rem;
@@ -1361,6 +1363,48 @@ border: none;
   text-align: justify;
   align-content: center;
 }
+
+
+
+@media (max-width: 1100px) {
+  .rse{
+    width: 100%;
+  }
+
+  .rse1 {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .rse1-elements {
+    margin: 2rem 0 1rem 0;
+  }
+  .rse1-element {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+    margin-bottom: 1.5rem;
+  }
+  .rse1-element-text {
+    width: 100%;
+  }
+  .rse1-element-text p:first-child {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 600px) {
+  .rse1 {
+    padding: 0.5rem;
+  }
+  .rse1-element-img img {
+    width: 1.5rem;
+  }
+  .rse1-element-text p:first-child {
+    font-size: 1rem;
+  }
+}
+
+
+
 /* End rse */
 
 
@@ -1939,3 +1983,28 @@ nav ul li a {
   font-size: 12px;
 }
 
+@media (max-width: 1100px){
+  .about,
+  .services,
+  .action,
+  .logistique-section,
+  .big-carte,
+  .rse,
+  .qhse,
+  .contact-us,
+  .join1,
+  .projects{
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+   .qhse .title1,
+   .qhse .title2, 
+   .qhse .qhse-elements {
+    margin: 0;
+   }
+
+   .title2{
+    width: 90%;
+   }
+}
