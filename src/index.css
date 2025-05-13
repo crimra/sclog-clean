@@ -1174,7 +1174,104 @@ footer .bottom {
   gap: 0.5rem;
 }
 
+@media (max-width: 1360px) {
+  .logistique-section,
+  .big-carte {
+    padding: 2rem 1rem;
+    width: 98%;
+  }
+  .logistique-section .items .item img {
+    width: 14rem;
+  }
+}
 
+@media (max-width: 768px) {
+  .logistique-section,
+  .big-carte {
+    padding: 1rem 0.5rem;
+    width: 100%;
+  }
+  .logistique-section .items {
+    gap: 1rem;
+  }
+  .logistique-section .items .item {
+    flex-direction: column !important;
+    gap: 1rem;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .logistique-section .items .item img {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    display: block;
+  }
+  .logistique-section .items .item p {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 1360px) {
+  .logistique-schema {
+    height: 40vh;
+    margin: 2rem 0;
+  }
+  .logistique-schema .schema {
+    height: 30vh;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 768px) {
+  .logistique-schema {
+    height: 25vh;
+    margin: 1rem 0;
+  }
+  .logistique-schema .schema {
+    height: 15vh;
+    background-size: contain;
+  }
+  .logistique-schema p:first-child {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .big-carte .carte {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .logistique .carte .carte-right img {
+    width: 7rem;
+  }
+  .logistique .carte-right {
+    width: 100%;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .big-carte .carte {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .logistique .carte .carte-right img {
+    width: 5rem;
+  }
+  .logistique .carte-right {
+    width: 100%;
+    gap: 0.3rem;
+  }
+  .big-carte .title2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+}
 
 /* End logistique */
 
