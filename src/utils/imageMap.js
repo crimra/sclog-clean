@@ -21,3 +21,5 @@ export const imageMap = {
     'lou3.jpg': lou3,
     'lou4.jpg': lou4,
   };
+
+  export default imageMap;
