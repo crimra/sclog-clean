@@ -2,7 +2,7 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-const SmoothScrollLink = ({ to, className = '', children }) => {
+const SmoothScrollLink = ({ to, className = '', children, setBurgerOpen }) => {
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -19,6 +19,7 @@ const SmoothScrollLink = ({ to, className = '', children }) => {
         el.scrollIntoView({ behavior: 'smooth' });
       }
     }
+    setBurgerOpen(false);
   };
 
   return (

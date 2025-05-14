@@ -10,7 +10,7 @@ const MainHero = () => {
         muted
         playsInline
         preload="auto"
-        style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
       >
         <source src="/assets/img/accueil.mp4" type="video/mp4" />
         Your browser does not support the video tag.

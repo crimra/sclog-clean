@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SmoothScrollLink from './SmoothScrollLink';
@@ -12,6 +12,18 @@ const Header = () => {
   const [burgerOpen, setBurgerOpen] = useState(false);
 
   const location = useLocation();
+  const navRef = useRef();
+
+  useEffect(() => {
+    if (!burgerOpen) return;
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setBurgerOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [burgerOpen]);
 
   const toggleLangMenu = () => setShowLangMenu(prev => !prev);
 
@@ -38,28 +50,29 @@ const Header = () => {
         <span></span>
       </button>
 
-      <nav className={burgerOpen ? 'open' : ''}>
+      <nav className={burgerOpen ? 'open' : ''} ref={navRef}>
         <ul>
           <li>
             <Link
               to="/"
               className={location.pathname === '/' ? 'activeNavLink' : ''}
+              onClick={() => setBurgerOpen(false)}
             >
               {t('nav.home')}
             </Link>
           </li>
           <li>
-            <SmoothScrollLink to="#presentation" className={activeSection === 'presentation'}>
+            <SmoothScrollLink to="#presentation" className={activeSection === 'presentation'} onClick={() => setBurgerOpen(false)}>
               {t('nav.presentation')}
             </SmoothScrollLink>
           </li>
           <li>
-            <SmoothScrollLink to="#h3se" className={activeSection === 'h3se'}>
+            <SmoothScrollLink to="#h3se" className={activeSection === 'h3se'} onClick={() => setBurgerOpen(false)}>
               {t('nav.h3se')}
             </SmoothScrollLink>
           </li>
           <li>
-            <SmoothScrollLink to="#projects" className={activeSection === 'projects'}>
+            <SmoothScrollLink to="#projects" className={activeSection === 'projects'} onClick={() => setBurgerOpen(false)}>
               {t('nav.projects')}
             </SmoothScrollLink>
           </li>
@@ -67,6 +80,7 @@ const Header = () => {
             <Link
               to="/logistique"
               className={location.pathname === '/logistique' ? 'activeNavLink' : ''}
+              onClick={() => setBurgerOpen(false)}
             >
               {t('nav.logistique')}
             </Link>
@@ -75,6 +89,7 @@ const Header = () => {
             <Link
               to="/rse"
               className={location.pathname === '/rse' ? 'activeNavLink' : ''}
+              onClick={() => setBurgerOpen(false)}
             >
               {t('nav.rse')}
             </Link>
@@ -83,6 +98,7 @@ const Header = () => {
             <Link
               to="/rejoindre"
               className={location.pathname === '/rejoindre' ? 'activeNavLink' : ''}
+              onClick={() => setBurgerOpen(false)}
             >
               {t('nav.rejoindre')}
             </Link>
@@ -91,6 +107,7 @@ const Header = () => {
             <Link
               to="/news"
               className={location.pathname === '/news' ? 'activeNavLink' : ''}
+              onClick={() => setBurgerOpen(false)}
             >
               {t('nav.news')}
             </Link>
