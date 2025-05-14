@@ -149,7 +149,6 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
   cursor: pointer;
   background: #fff;
   color: #1F458E;
@@ -1135,12 +1134,14 @@ footer .bottom {
 .logistique-schema .schema{
   margin: 2rem; 
   background-color: #20458e;
-  width: 100%;
   background-image: url(/assets/img/schema.png);
   background-repeat: no-repeat;
-  height: 60vh;
-  background-size:contain;
+  background-size: contain;
   background-position: center;
+  width: 100%;
+  min-height: 200px;   /* Hauteur minimale pour petits écrans */
+  height: 60vh;        /* Hauteur relative à la fenêtre */
+  display: block;
 }
 
 .logistique-schema{
@@ -1251,14 +1252,20 @@ footer .bottom {
   }
 }
 
+
+
 @media (max-width: 768px) {
   .logistique-schema {
     height: 50vh;
     margin: 1rem 0;
+    width: 100vw;
   }
   .logistique-schema .schema {
     height: 40vh;
+    min-height: 120px;
     background-size: contain;
+    width: 100%;
+    margin: 0 auto;
   }
   .logistique-schema p:first-child {
     font-size: 0.9rem;
@@ -1853,8 +1860,8 @@ border: none;
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 60;
-  margin-right: 7.5rem;
+  margin-right: 8rem;
+  z-index: 9999;
 }
 
 .burger span {
@@ -2108,3 +2115,9 @@ nav ul li a {
   to { transform: rotate(360deg); }
 }
 
+.smooth-active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: inherit; /* garde la couleur normale */
+  /* Ajoute d'autres styles si besoin */
+}
