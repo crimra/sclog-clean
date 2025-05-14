@@ -49,17 +49,17 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <SmoothScrollLink to="#presentation" className={activeSection === 'presentation' ? 'activeNavLink' : ''}>
+            <SmoothScrollLink to="#presentation" className={activeSection === 'presentation'}>
               {t('nav.presentation')}
             </SmoothScrollLink>
           </li>
           <li>
-            <SmoothScrollLink to="#h3se" className={activeSection === 'h3se' ? 'activeNavLink' : ''}>
+            <SmoothScrollLink to="#h3se" className={activeSection === 'h3se'}>
               {t('nav.h3se')}
             </SmoothScrollLink>
           </li>
           <li>
-            <SmoothScrollLink to="#projects" className={activeSection === 'projects' ? 'activeNavLink' : ''}>
+            <SmoothScrollLink to="#projects" className={activeSection === 'projects'}>
               {t('nav.projects')}
             </SmoothScrollLink>
           </li>

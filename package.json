@@ -12,6 +12,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.4",
     "animate.css": "^4.1.1",
+    "aws-amplify": "^6.14.4",
     "i18next": "^25.1.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -22,15 +23,22 @@
     "tailwindcss": "^4.1.4"
   },
   "devDependencies": {
+    "@aws-amplify/backend": "^1.16.1",
+    "@aws-amplify/backend-cli": "^1.7.2",
     "@eslint/js": "^9.21.0",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
     "@vitejs/plugin-react-swc": "^3.9.0",
+    "aws-cdk-lib": "^2.189.1",
+    "constructs": "^10.4.2",
+    "esbuild": "^0.25.4",
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
     "vite": "^6.3.4"
   }
 }
