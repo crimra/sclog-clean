@@ -161,15 +161,16 @@
     "fluvial": "Transferts assurés par voie fluviale"
   },
   "qhse": {
-    "title": "Qualité, Hygiène, Sécurité, Environnement",
-    "policy": "Notre politique QHSE vise l’excellence opérationnelle et la sécurité de tous.",
+    "title1": "H3SEQ",
+    "title2": "Notre politique QHSE",
     "points": [
       "Mise en place d’une politique H3SE",
       "Mise en place de piézomètres dans les dépôts pour assurer le suivi de la qualité des eaux souterraines",
       "Mise en place d’un programme environnemental",
       "Mise en place d’un plan de continuité d’activité (PCA)",
       "Audit JIG tous les 2 ans sur les sites recevant du Jet-A1 (carburant aviation)"
-    ]
+    ],
+    "download": "Télécharger notre engagement H3SE"
   },
   "join": {
     "title": "Politique RH et recrutement",
@@ -228,7 +229,7 @@
     "louteteTitle": "Loutété",
     "louteteDesc": "Réhabilitation et construction de salles de classe à Loutété, avec latrines et tables-bancs, projet réalisé de 2020 à 2022.",
     "ouessoTitle": "Ouesso",
-    "ouessoDesc": "Réhabilitation d'une école primaire à Ouesso."
+    "ouessoDesc": "Remise officielle des kits scolaires et du bâtiment + latrines construits à l'école Antoine MILANDOU de Ouesso, janvier 2025."
   },
   "projects": {
     "title": "Projets",

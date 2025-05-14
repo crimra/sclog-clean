@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SmoothScrollLink from './SmoothScrollLink';
 import useScrollSpy from '../hooks/useScrollSpy';
@@ -9,18 +9,17 @@ const Header = () => {
   const activeSection = useScrollSpy(['presentation', 'h3se', 'projects']);
   const [showLangMenu, setShowLangMenu] = useState(false);
   const [lang, setLang] = useState(i18n.language || 'fr');
+  const [burgerOpen, setBurgerOpen] = useState(false);
 
-  const toggleLangMenu = () => {
-    setShowLangMenu(prev => !prev);
-  };
+  const location = useLocation();
+
+  const toggleLangMenu = () => setShowLangMenu(prev => !prev);
 
   const handleLangChange = (newLang) => {
     setLang(newLang);
     setShowLangMenu(false);
     i18n.changeLanguage(newLang);
   };
-
-  const [burgerOpen, setBurgerOpen] = useState(false);
 
   return (
     <header className='outfit z-50 relative'>
@@ -42,7 +41,12 @@ const Header = () => {
       <nav className={burgerOpen ? 'open' : ''}>
         <ul>
           <li>
-            <Link to="/" className={activeSection === 'home' ? 'activeNavLink' : ''}>{t('nav.home')}</Link>
+            <Link
+              to="/"
+              className={location.pathname === '/' ? 'activeNavLink' : ''}
+            >
+              {t('nav.home')}
+            </Link>
           </li>
           <li>
             <SmoothScrollLink to="#presentation" className={activeSection === 'presentation' ? 'activeNavLink' : ''}>
@@ -59,10 +63,38 @@ const Header = () => {
               {t('nav.projects')}
             </SmoothScrollLink>
           </li>
-          <li><Link to="/logistique">{t('nav.logistique')}</Link></li>
-          <li><Link to="/rse">{t('nav.rse')}</Link></li>
-          <li><Link to="/rejoindre">{t('nav.rejoindre')}</Link></li>
-          <li><Link to="/news">{t('nav.news')}</Link></li>
+          <li>
+            <Link
+              to="/logistique"
+              className={location.pathname === '/logistique' ? 'activeNavLink' : ''}
+            >
+              {t('nav.logistique')}
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/rse"
+              className={location.pathname === '/rse' ? 'activeNavLink' : ''}
+            >
+              {t('nav.rse')}
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/rejoindre"
+              className={location.pathname === '/rejoindre' ? 'activeNavLink' : ''}
+            >
+              {t('nav.rejoindre')}
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/news"
+              className={location.pathname === '/news' ? 'activeNavLink' : ''}
+            >
+              {t('nav.news')}
+            </Link>
+          </li>
         </ul>
         <div className="search-box mt-4">
           <input type="text" placeholder={t('search')} />

@@ -24,7 +24,8 @@ const EventTabs = () => {
     },
     {
       title: t('eventTabs.ouessoTitle'),
-      images: ['card.png'],
+      type: 'video',
+      videos: ['ouesso.mp4'],
       description: t('eventTabs.ouessoDesc'),
     },
   ];

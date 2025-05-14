@@ -13,8 +13,8 @@ const Rejoindre = () => {
 
   return (
     <>
-      <section className='hero'>
-        <img src="/assets/img/hero3.webp" alt="hero-image" />
+      <section className='hero' loading="eager">
+        <img src="/assets/img/hero3.webp" alt="hero-image" loading="eager"/>
       </section>
 
       <section className="join">

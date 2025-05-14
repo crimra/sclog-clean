@@ -49,8 +49,8 @@ const News = () => {
 
   return (
     <>
-      <section className='hero'>
-        <img src="/assets/img/hero4.webp" alt="hero-image" />
+      <section className='hero' loading="eager">
+        <img src="/assets/img/hero4.webp" alt="hero-image" loading="eager" />
       </section>
       <section id='news-section' className='news-section'>
 

@@ -10,8 +10,8 @@ const Logistique = () => {
   useScrollAnimations();
   return (
     <>
-      <section className='hero'>
-        <img src='/assets/img/hero.webp' alt="hero-image" loading="lazy"/>
+      <section className='hero' loading="eager">
+        <img src='/assets/img/hero.webp' alt="hero-image" loading="eager"/>
       </section>
       <section className='logistique'>
         <div className="logistique-section">
