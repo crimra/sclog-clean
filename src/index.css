@@ -1791,6 +1791,8 @@ border: none;
     padding: 3rem 5rem; /* Réduit le padding */
   }
 
+  
+
   .about .tabs-header {
     flex-direction: column; /* Empile les éléments */
     gap: 2rem; /* Ajoute un espacement vertical */
@@ -2055,3 +2057,4 @@ nav ul li a {
     box-shadow: 0 2px 8px rgba(32,69,142,0.07);
   }
 }
+
