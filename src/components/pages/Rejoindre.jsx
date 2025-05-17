@@ -19,16 +19,16 @@ const Rejoindre = () => {
 
       <section className="join">
         <div className="join1">
-          <p className="title2">{t('join.title')}</p>
+          <p className="title2 animated">{t('join.title')}</p>
           <div className="join1-elements">
             {steps.map((step, idx) => (
               <div className="join1-element" key={idx}>
-                <div className="join1-element-img slide-in-delay">
+                <div className="join1-element-img slide-in-delay animated">
                   <img src="/assets/service-check.svg" alt="" />
                 </div>
                 <div className="join1-element-text">
-                  <p className="slide-in-delay">{step.title}</p>
-                  <p className="slide-in-delay">{step.desc}</p>
+                  <p className="slide-in-delay animated">{step.title}</p>
+                  <p className="slide-in-delay animated">{step.desc}</p>
                 </div>
               </div>
             ))}

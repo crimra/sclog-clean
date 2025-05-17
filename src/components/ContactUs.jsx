@@ -7,7 +7,7 @@ const ContactUs = () => {
   return (
     <section className="contact-us">
       <div className="contact-info">
-        <p className="title2">{t('contact.title')}</p>
+        <p className="title2 animated">{t('contact.title')}</p>
         <p dangerouslySetInnerHTML={{ __html: t('contact.intro') }} />
       </div>
       <div className="contact-form">

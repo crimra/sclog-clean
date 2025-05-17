@@ -60,8 +60,8 @@ const Services = () => {
     <section className="services">
       <article>
         <div className="left">
-          <p className="title1">{t('services.title1')}</p>
-          <p className="title2">{t('services.title2')}</p>
+          <p className="title1 animated">{t('services.title1')}</p>
+          <p className="title2 animated">{t('services.title2')}</p>
           <p className="title3 slide-in">{t('services.title3')}</p>
           <p className="slide-in">
             {t('services.intro')}

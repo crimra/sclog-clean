@@ -18,20 +18,20 @@ const Logistique = () => {
           <p className='title2'>{t('logistique.title')}</p>
           <div className="items">
             <div className="item">
-              <img src="/assets/img/paysage2.jpg" className='slide-in'/>
-              <p className='slide-in-delay'>
+              <img src="/assets/img/paysage2.jpg" className='slide-in animated'/>
+              <p className='slide-in-delay animated'>
                 {t('logistique.section1')}
               </p>
             </div>
             <div className="item">
-              <img src="/assets/img/paysage7.jpg" className='slide-in-delay' />
-              <p className='slide-in'>
+              <img src="/assets/img/paysage7.jpg" className='slide-in-delay animated' />
+              <p className='slide-in animated'>
                 {t('logistique.section2')}
               </p>
             </div>
             <div className="item">
-              <img src="/assets/img/paysage6.jpg" className='slide-in'/>
-              <p className='slide-in-delay'>
+              <img src="/assets/img/paysage6.jpg" className='slide-in animated'/>
+              <p className='slide-in-delay animated'>
                 {t('logistique.section3')}
               </p>
             </div>
@@ -47,23 +47,23 @@ const Logistique = () => {
           <p className='title2'>{t('logistique.carteTitle')}</p>
           <div className="carte">
             <div>
-              <img src="/assets/carte.svg" className="slide-in" />
+              <img src="/assets/carte.svg" className="slide-in animated" />
             </div>
             <div className='carte-right'>
               <div>
-                <img src="/assets/route.svg" className="slide-in-delay" />
-                <p className='slide-in-delay'>{t('logistique.route')}</p>
+                <img src="/assets/route.svg" className="slide-in-delay animated" />
+                <p className='slide-in-delay animated'>{t('logistique.route')}</p>
               </div>
               <div>
-                <img src="/assets/rail.svg" className="slide-in-delay" />
-                <p className='slide-in-delay'>{t('logistique.rail')}</p>
+                <img src="/assets/rail.svg" className="slide-in-delay animated" />
+                <p className='slide-in-delay animated'>{t('logistique.rail')}</p>
               </div>
               <div>
-                <img src="/assets/fluvial.svg" className="slide-in-delay" />
-                <p className='slide-in-delay'>{t('logistique.fluvial')}</p>
+                <img src="/assets/fluvial.svg" className="slide-in-delay animated" />
+                <p className='slide-in-delay animated'>{t('logistique.fluvial')}</p>
               </div>
               <div>
-                <img src="/assets/depot.svg" className="slide-in-delay" />
+                <img src="/assets/depot.svg" className="slide-in-delay animated" />
               </div>
             </div>
           </div>

@@ -36,7 +36,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="projects">
-      <h2 className="title2">{t('projects.title')}</h2>
+      <h2 className="title2 animated">{t('projects.title')}</h2>
       <h1 className="title3">{t('projects.done')}</h1>
 
       <div className="slider">

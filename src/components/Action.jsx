@@ -52,7 +52,7 @@ const Action = () => {
 
   return (
     <div className="action">
-      <p className="title2">{t('action.title')}</p>
+      <p className="title2 animated">{t('action.title')}</p>
       <p>{t('action.intro')}</p>
 
       <div className="chart">

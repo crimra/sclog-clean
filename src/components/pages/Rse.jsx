@@ -21,14 +21,14 @@ const Rse = () => {
 
           <div className="rse1-title">
             <p className='title2'>{t('rse.title')}</p>
-            <p className='slide-in'>{t('rse.intro')}</p>
+            <p className='slide-in animated'>{t('rse.intro')}</p>
             <br /><br />
-            <p className='slide-in'>{t('rse.conclusion')}</p>
+            <p className='slide-in animated'>{t('rse.conclusion')}</p>
           </div>     
 
           <div className="rse1-elements">
 
-            <div className='rse1-element slide-in-delay'>
+            <div className='rse1-element slide-in-delay animated'>
               <div className="rse1-element-img">
                 <img src="/assets/service-check.svg" />
               </div>
@@ -38,7 +38,7 @@ const Rse = () => {
               </div>
             </div>
 
-            <div className='rse1-element slide-in-delay'>
+            <div className='rse1-element slide-in-delay animated'>
               <div className="rse1-element-img">
                 <img src="/assets/service-check.svg"  />
               </div>
@@ -48,7 +48,7 @@ const Rse = () => {
               </div>
             </div>
 
-            <div className='rse1-element slide-in-delay'>
+            <div className='rse1-element slide-in-delay animated'>
               <div className="rse1-element-img">
                 <img src="/assets/service-check.svg" />
               </div>

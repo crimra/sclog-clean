@@ -50,7 +50,7 @@ const Tabs = () => {
 
   return (
     <section className="about" id="presentation">
-      <p ref={title1Ref} className="title1 outfit">
+      <p ref={title1Ref} className="title1 outfit animated">
         {t('about.title1')}
       </p>
       <p ref={title2Ref} className="title2 outfit">
