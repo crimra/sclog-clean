@@ -49,7 +49,7 @@ const News = () => {
 
   return (
     <>
-      <section className='hero' loading="eager">
+      <section className='hero ' loading="eager">
         <img src="/assets/img/hero4.jpg" alt="hero-image" loading="eager" />
       </section>
       <section id='news-section' className='news-section'>

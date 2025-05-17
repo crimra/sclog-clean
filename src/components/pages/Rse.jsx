@@ -12,7 +12,7 @@ const Rse = () => {
 
   return (
     <>
-      <section className='hero' loading="eager">
+      <section className='hero ' loading="eager">
         <img src="/assets/img/hero2.jpg" alt="hero-image" loading="eager"/>
       </section>
       <section className="rse">

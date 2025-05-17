@@ -2,7 +2,7 @@ import React from 'react'
 
 const MainHero = () => {
   return (
-    <section className='main-hero' id='main-hero'>
+    <section className='main-hero ' id='main-hero'>
       <video
         src="/assets/img/accueil.mp4"
         autoPlay

@@ -62,8 +62,8 @@ const Projects = () => {
       {/* Section "En cours" */}
       <div className="in-progress">
         <h1 className="title3">{t('projects.inProgress')}</h1>
+        <h3>{t('projects.inProgressTitle')}</h3>
         <div className="content">
-          <h3>{t('projects.inProgressTitle')}</h3>
           <div className="main-card">
             {/*<FaArrowLeft className="projects-arrows" onClick={handleInProgressPrev} />*/}
             {inProgressImages.map((img, index) => (

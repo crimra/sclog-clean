@@ -13,7 +13,7 @@ const Rejoindre = () => {
 
   return (
     <>
-      <section className='hero' loading="eager">
+      <section className='hero ' loading="eager">
         <img src="/assets/img/hero3.jpg" alt="hero-image" loading="eager"/>
       </section>
 

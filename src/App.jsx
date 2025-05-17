@@ -15,7 +15,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simule le chargement (remplace par tes propres conditions si besoin)
+    // Simule le chargement 
     const timeout = setTimeout(() => setLoading(false), 1200);
     return () => clearTimeout(timeout);
   }, []);
