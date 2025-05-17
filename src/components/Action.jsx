@@ -7,10 +7,10 @@ const Action = () => {
 
   const data = [
     { name: t('action.total'), value: 25, color: '#F70C0D', logo: '/assets/Total.svg' },
-    { name: t('action.puma'), value: 25, color: '#102E60', logo: '/assets/Puma.svg' },
-    { name: t('action.xoil'), value: 25, color: '#FFC000', logo: '/assets/x-oil.svg' },
-    { name: t('action.gpl'), value: 12.5, color: '#00B050', logo: '/assets/GPL.svg' },
-    { name: t('action.snpc'), value: 12.5, color: '#FFFF00', logo: '/assets/SNPC.svg' },
+    { name: t('action.snpc'), value: 25, color: '#102E60', logo: '/assets/SNPC.svg' },
+    { name: t('action.gpl'), value: 25, color: '#FFC000', logo: '/assets/GPL.svg' },
+    { name: t('action.xoil'), value: 12.5, color: '#FFFF00', logo: '/assets/x-oil.svg' },
+    { name: t('action.puma'), value: 12.5, color: '#00B050', logo: '/assets/Puma.svg' },
   ];
 
   const CustomLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
@@ -24,7 +24,7 @@ const Action = () => {
     const xText = cx + textRadius * Math.cos(-midAngle * RADIAN);
     const yText = cy + textRadius * Math.sin(-midAngle * RADIAN);
 
-    const logoSize = data[index].name === t('action.puma') || data[index].name === t('action.xoil') ? 100 : 50;
+    const logoSize = 48; // taille fixe pour tous les logos (ajuste selon ton besoin)
     const boxSize = 40;
 
     return (
