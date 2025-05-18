@@ -4,4 +4,4 @@ build:
     - npm run build
 
 publish:
-  directory: dist
+  directory: build
