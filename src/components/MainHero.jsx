@@ -1,23 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
 const MainHero = () => {
-  return (
-    <section className='main-hero ' id='main-hero'>
+   const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
+  
+    useEffect(() => {
+      const handleResize = () => setIsMobile(window.innerWidth < 600);
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+  
+    const videoSrc = isMobile
+      ? '/assets/accueil-phone.mp4'
+      : '/assets/accueil.mp4';
+  
+    return (
       <video
-        src="/assets/img/accueil.mp4"
+        className="hero-media"
+        src={videoSrc}
         autoPlay
-        loop
         muted
+        loop
         playsInline
-        preload="auto"
-        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-      >
-        <source src="/assets/img/accueil.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </section>
-  )
-}
+        style={{ width: '100%', height: 'auto' }}
+      />
+    );
+  };
 
 export default MainHero
 
