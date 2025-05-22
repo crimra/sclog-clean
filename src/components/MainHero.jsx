@@ -10,8 +10,8 @@ const MainHero = () => {
     }, []);
   
     const videoSrc = isMobile
-      ? '/assets/accueil-phone.mp4'
-      : '/assets/accueil.mp4';
+      ? '/assets/img/accueil-phone.mp4'
+      : '/assets/img/accueil.mp4';
   
     return (
       <video

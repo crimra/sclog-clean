@@ -1,6 +1,5 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import Hero from "../Hero";
 import useGlobalTitleAnimations from "../../hooks/useGlobalTitleAnimations";
 import useScrollAnimations from "../../hooks/useScrollAnimations";
 import RecruitmentForm from "../../components/RecruitmentForm"; 

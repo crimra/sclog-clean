@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import NewsCard from '../news/NewsCard'
-import Hero from '../Hero'
 import useGlobalTitleAnimations from "../../hooks/useGlobalTitleAnimations";
 
 const News = () => {
