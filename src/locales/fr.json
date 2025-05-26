@@ -219,7 +219,7 @@
   },
   "eventTabs": {
     "orphTitle": "SCLOG & Orphelinat",
-    "orphDesc": "L’initiative confirme à nouveau la volonté de cette entreprise à soutenir l’école congolaise ... (ton texte complet ici)",
+    "orphDesc": "Dans le cadre de sa politique de Responsabilité Sociétale, SCLOG a soutenu la rentrée scolaire 2024-2025 en offrant des kits scolaires complets à trois orphelinats de Brazzaville : Notre Dame de Nazareth, Bon Pasteur et Yamba Nga. Cette initiative vise à favoriser l’accès à l’éducation pour les enfants les plus vulnérables, en leur fournissant cahiers, stylos, sacs à dos et autres fournitures essentielles. Au-delà de ce geste solidaire, SCLOG s’investit durablement dans l’éducation à travers la construction de salles de classe à Ouesso et l’accueil régulier de stagiaires dans ses installations. Pour SCLOG, contribuer à la formation des jeunes générations, c’est investir dans l’avenir du Congo.",
     "cfcoTitle": "Don CFCO 2024",
     "cfcoDesc": "Remise don CFCO 30 avril 2024",
     "louteteTitle": "Loutété",
@@ -228,10 +228,9 @@
     "ouessoDesc": "Remise officielle des kits scolaires et du bâtiment + latrines construits à l'école Antoine MILANDOU de Ouesso, janvier 2025."
   },
   "projects": {
-    "title": "Projets",
-    "done": "Réalisés",
-    "inProgress": "En cours...",
-    "inProgressTitle": "Construction d’un réservoir double paroi super – R05 (15000 m3) à Pointe-Noire.",
+    "title": "Nos projets",
+    "done": "Projets réalisés",
+    "inProgress": "Projets en cours",
     "list": [
       "Construction d’un réservoir double paroi gazole R04 (15000 m3) à Pointe-Noire",
       "Construction des défenses contre incendie (DCI) dans les dépôts de Brazzaville, Pointe-Noire, Ouesso et Oyo.",
@@ -239,6 +238,9 @@
       "Réhabilitation des réservoirs dans tous les dépôts SCLOG.",
       "Modernisation du système de comptage à Pointe-Noire et Ouesso.",
       "Modernisation d’une pomperie et poste de chargement camion, redimensionnement de la tuyauterie – Dépôt d’Impfondo."
+    ],
+    "inProgressList": [
+      "Construction d’un réservoir double paroi super – R05 (15000 m3) à Pointe-Noire."
     ]
   },
   "news": {

@@ -219,7 +219,7 @@
   },
   "eventTabs": {
     "orphTitle": "SCLOG & Orphanage",
-    "orphDesc": "The initiative once again confirms the company's commitment to supporting Congolese schools ... (your full translated text here)",
+    "orphDesc": "As part of its Corporate Social Responsibility policy, SCLOG supported the 2024–2025 school year by donating complete school kits to three orphanages in Brazzaville: Notre Dame de Nazareth, Bon Pasteur, and Yamba Nga. This initiative aims to promote access to education for the most vulnerable children by providing them with notebooks, pens, backpacks, and other essential supplies. Beyond this act of solidarity, SCLOG is committed to long-term educational support through the construction of classrooms in Ouesso and by regularly hosting interns at its facilities. For SCLOG, contributing to the education of younger generations means investing in the future of Congo.",
     "cfcoTitle": "CFCO Donation 2024",
     "cfcoDesc": "CFCO donation ceremony April 30, 2024",
     "louteteTitle": "Loutété",
@@ -228,19 +228,21 @@
     "ouessoDesc": "Official handover of school kits and the building + latrines built at Antoine MILANDOU school in Ouesso, January 2025."
   },
   "projects": {
-    "title": "Projects",
-    "done": "Completed",
-    "inProgress": "In progress...",
-    "inProgressTitle": "Construction of a double-walled super tank – R05 (15,000 m3) in Pointe-Noire.",
-    "list": [
-      "Construction of a double-walled diesel tank R04 (15,000 m3) in Pointe-Noire",
-      "Construction of fire protection systems (DCI) in the depots of Brazzaville, Pointe-Noire, Ouesso and Oyo.",
-      "Installation of motorized valves for secure and optimized management of transfer and storage operations.",
-      "Rehabilitation of tanks in all SCLOG depots.",
-      "Modernization of the metering system in Pointe-Noire and Ouesso.",
-      "Modernization of a pump room and truck loading station, resizing of piping – Impfondo depot."
-    ]
-  },
+  "title": "Our Projects",
+  "done": "Completed Projects",
+  "inProgress": "Ongoing Projects",
+  "list": [
+    "Construction of a double-walled diesel tank R04 (15,000 m3) in Pointe-Noire.",
+    "Construction of fire defense systems (FDS) in the depots of Brazzaville, Pointe-Noire, Ouesso, and Oyo.",
+    "Installation of motorized valves for secure and optimized management of product transfer and storage operations.",
+    "Rehabilitation of tanks in all SCLOG depots.",
+    "Modernization of the metering system in Pointe-Noire and Ouesso.",
+    "Modernization of a pump station and truck loading post, resizing of piping – Impfondo depot."
+  ],
+  "inProgressList": [
+    "Construction of a double-walled gasoline tank – R05 (15,000 m3) in Pointe-Noire."
+  ]
+},
   "news": {
     "coming_soon": "Exciting news is on the way, don’t miss out!"
 }
