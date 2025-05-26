@@ -58,12 +58,16 @@
     "jobDescription": "Main duties",
     "positionWanted": "Position wanted",
     "positionOptions": {
-      "": "-- Select --",
-      "chauffeur": "Driver",
-      "logisticien": "Logistician",
-      "qhse": "QHSE Assistant",
-      "admin": "Administrative",
-      "other": "Other"
+      "select": "-- Select --",
+      "operator": "Multi-skilled Operator",
+      "maintenance": "Maintenance Technician",
+      "hse": "HSE Officer",
+      "accountant": "Accountant",
+      "buyer": "Purchasing Officer",
+      "it": "IT Specialist",
+      "secretary": "Secretary",
+      "tax": "Tax Specialist",
+      "treasurer": "Treasurer"
     },
     "contractType": "Contract type",
     "contractTypeOptions": {

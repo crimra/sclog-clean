@@ -117,21 +117,23 @@ const RecruitmentForm = () => {
 
       {/* Poste et contrat */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div>
-          <label>{t('recruitment.positionWanted')}</label>
-          <select name="positionWanted" required value={formData.positionWanted} onChange={handleChange} className="w-full p-2 border rounded">
-            <option value="">{t('recruitment.positionOptions.""')}</option>
-            <option value="chauffeur">{t('recruitment.positionOptions.chauffeur')}</option>
-            <option value="logisticien">{t('recruitment.positionOptions.logisticien')}</option>
-            <option value="qhse">{t('recruitment.positionOptions.qhse')}</option>
-            <option value="admin">{t('recruitment.positionOptions.admin')}</option>
-            <option value="other">{t('recruitment.positionOptions.other')}</option>
-          </select>
-        </div>
+        <select name="positionWanted" required value={formData.positionWanted} onChange={handleChange} className="w-full p-2 border rounded">
+          <option value="select">{t('recruitment.positionOptions.select')}</option>
+          <option value="operator">{t('recruitment.positionOptions.operator')}</option>
+          <option value="maintenance">{t('recruitment.positionOptions.maintenance')}</option>
+          <option value="hse">{t('recruitment.positionOptions.hse')}</option>
+          <option value="accountant">{t('recruitment.positionOptions.accountant')}</option>
+          <option value="buyer">{t('recruitment.positionOptions.buyer')}</option>
+          <option value="it">{t('recruitment.positionOptions.it')}</option>
+          <option value="secretary">{t('recruitment.positionOptions.secretary')}</option>
+          <option value="tax">{t('recruitment.positionOptions.tax')}</option>
+          <option value="treasurer">{t('recruitment.positionOptions.treasurer')}</option>
+        </select>
+
         <div>
           <label>{t('recruitment.contractType')}</label>
           <select name="contractType" value={formData.contractType} onChange={handleChange} className="w-full p-2 border rounded">
-            <option value="">{t('recruitment.contractTypeOptions.""')}</option>
+            <option value="select">{t('recruitment.contractTypeOptions.select')}</option>
             <option value="cdi">{t('recruitment.contractTypeOptions.cdi')}</option>
             <option value="cdd">{t('recruitment.contractTypeOptions.cdd')}</option>
             <option value="intern">{t('recruitment.contractTypeOptions.intern')}</option>
@@ -140,7 +142,7 @@ const RecruitmentForm = () => {
         <div>
           <label>{t('recruitment.availability')}</label>
           <select name="availability" value={formData.availability} onChange={handleChange} className="w-full p-2 border rounded">
-            <option value="">{t('recruitment.availabilityOptions.""')}</option>
+            <option value="select">{t('recruitment.availabilityOptions.select')}</option>
             <option value="immediate">{t('recruitment.availabilityOptions.immediate')}</option>
             <option value="1month">{t('recruitment.availabilityOptions.1month')}</option>
             <option value="other">{t('recruitment.availabilityOptions.other')}</option>
