@@ -58,23 +58,27 @@
     "jobDescription": "Fonctions principales",
     "positionWanted": "Poste recherché",
     "positionOptions": {
-      "": "-- Sélectionner --",
-      "chauffeur": "Chauffeur",
-      "logisticien": "Logisticien",
-      "qhse": "QHSE Assistant",
-      "admin": "Administratif",
-      "other": "Autre"
+      "select": "-- Sélectionner --",
+      "operator": "Opérateur Polyvalent",
+      "maintenance": "Agent de maintenance",
+      "hse": "HSE",
+      "accountant": "Comptable",
+      "buyer": "Acheteur",
+      "it": "Informaticien",
+      "secretary": "Secrétaire",
+      "tax": "Fiscaliste",
+      "treasurer": "Trésorier"
     },
     "contractType": "Type de contrat",
     "contractTypeOptions": {
-      "": "-- Sélectionner --",
+      "select": "-- Sélectionner --",
       "cdi": "CDI",
       "cdd": "CDD",
       "intern": "Stage"
     },
     "availability": "Disponibilité",
     "availabilityOptions": {
-      "": "-- Sélectionner --",
+      "select": "-- Sélectionner --",
       "immediate": "Immédiate",
       "1month": "1 mois",
       "other": "Autre"
