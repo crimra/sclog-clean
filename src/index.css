@@ -511,7 +511,7 @@ nav ul li a:hover {
 
 /* news */
 
-#news-section {
+/* #news-section {
   text-align: center;
 }
 
@@ -580,6 +580,62 @@ nav ul li a:hover {
   justify-self: start;
   padding-bottom: 1rem;
   padding-left: 2rem;
+} 
+
+*/
+
+.news-page{
+  width: 100%;
+  height: 40vh;
+  margin : auto;
+  justify-items: center;
+  padding: 8rem 0;
+}
+
+.news-page h2 {
+  font-size: 1.8rem;
+  opacity: 0.8;
+  animation: fadeIn 1s ease;
+  margin: 0 auto;
+}
+
+
+.loading-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 40px;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #1F458E;
+  animation: loading-dots 1.5s infinite ease-in-out;
+}
+
+.dot:nth-child(1) {
+  animation-delay: 0s;
+}
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes loading-dots {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
 }
 
 /* end news */

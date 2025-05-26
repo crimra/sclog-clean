@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 
 const NewsCard = ({img, title, date, text}) => {
 
@@ -25,4 +25,4 @@ const NewsCard = ({img, title, date, text}) => {
   )
 }
 
-export default NewsCard
+export default NewsCard */

@@ -189,10 +189,6 @@
       }
     ]
   },
-  "news": {
-    "title": "Actualités",
-    "noNews": "Aucune actualité pour le moment."
-  },
   "action": {
     "title": "Actionnariat SCLOG",
     "intro": "La Société Commune de Logistique, SCLOG, est une société anonyme dont l’actionnariat est composé comme suit :",
@@ -244,5 +240,8 @@
       "Modernisation du système de comptage à Pointe-Noire et Ouesso.",
       "Modernisation d’une pomperie et poste de chargement camion, redimensionnement de la tuyauterie – Dépôt d’Impfondo."
     ]
-  }
+  },
+  "news": {
+    "coming_soon": "Ne manquez pas nos prochaines actualités, en ligne très bientôt !"
+}
 }

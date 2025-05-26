@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+/* import React, { useEffect } from 'react'
 import NewsCard from '../news/NewsCard'
 import useGlobalTitleAnimations from "../../hooks/useGlobalTitleAnimations";
 
@@ -74,6 +74,37 @@ const News = () => {
     </>
    
   )
+
 }
 
-export default News
+export default News */
+
+
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+
+const News = () => {
+  const { t } = useTranslation();
+
+  return (
+    <>
+      <section className="hero">
+        <img src="/assets/img/hero4.jpg" alt="hero-image" loading="eager" />
+      </section>
+
+      <div className="news-page text-center mt-10">
+        <h2 className="title2 mb-6">{t('news.coming_soon')}</h2>
+
+        {/* Animation de chargement */}
+        <div className="loading-dots">
+          <span className="dot"></span>
+          <span className="dot"></span>
+          <span className="dot"></span>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default News;
+

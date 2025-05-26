@@ -189,10 +189,6 @@
       }
     ]
   },
-  "news": {
-    "title": "News",
-    "noNews": "No news at the moment."
-  },
   "errors": {
     "404": "Page not found",
     "required": "This field is required",
@@ -244,5 +240,8 @@
       "Modernization of the metering system in Pointe-Noire and Ouesso.",
       "Modernization of a pump room and truck loading station, resizing of piping – Impfondo depot."
     ]
-  }
+  },
+  "news": {
+    "coming_soon": "Exciting news is on the way, don’t miss out!"
+}
 }
