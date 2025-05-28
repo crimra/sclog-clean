@@ -27,6 +27,8 @@ const RecruitmentForm = () => {
     consent: false,
   });
 
+  const [submitStatus, setSubmitStatus] = useState({ status: '', message: '' });
+
   const handleChange = (e) => {
     const { name, value, type, checked, files } = e.target;
 
@@ -43,15 +45,68 @@ const RecruitmentForm = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("📩 Form submission:", formData);
+    setSubmitStatus({ status: 'loading', message: t('recruitment.sending') });
+
+    try {
+      const form = new FormData();
+      // Ajouter toutes les données du formulaire
+      Object.keys(formData).forEach(key => {
+        if (key === 'languages') {
+          form.append(key, formData[key].join(', '));
+        } else if (key === 'resume' && formData[key]) {
+          form.append(key, formData[key]);
+        } else if (key !== 'resume') {
+          form.append(key, formData[key]);
+        }
+      });
+
+      const response = await fetch('http://localhost:3000/api/applications', {
+        method: 'POST',
+        body: form,
+      });
+
+      if (response.ok) {
+        setSubmitStatus({ status: 'success', message: t('recruitment.success') });
+        // Réinitialiser le formulaire
+        setFormData({
+          fullName: "",
+          birthDate: "",
+          maritalStatus: "",
+          email: "",
+          phone: "",
+          address: "",
+          diploma: "",
+          school: "",
+          gradYear: "",
+          lastJob: "",
+          company: "",
+          jobDuration: "",
+          jobDescription: "",
+          positionWanted: "",
+          contractType: "",
+          availability: "",
+          languages: [],
+          hasLicense: "",
+          resume: null,
+          motivation: "",
+          consent: false,
+        });
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus({ status: 'error', message: t('recruitment.error') });
+    }
   };
 
   return (
     <form
       onSubmit={handleSubmit}
       className="max-w-4xl mx-auto p-6 bg-white rounded-xl space-y-6"
+      encType="multipart/form-data"
     >
       <h1 className="text-2xl font-bold text-[#1F458E]">{t('recruitment.title')}</h1><br /><br />
 
@@ -206,8 +261,22 @@ const RecruitmentForm = () => {
         </label>
       </div>
 
-      <button type="submit" className="bg-[#1F458E] text-white px-6 py-2 rounded hover:bg-[#173779] transition w-full md:w-auto">
-        {t('recruitment.submit')}
+      {submitStatus.message && (
+        <div className={`message ${submitStatus.status} p-4 rounded ${
+          submitStatus.status === 'success' ? 'bg-green-100 text-green-700' : 
+          submitStatus.status === 'error' ? 'bg-red-100 text-red-700' : 
+          'bg-blue-100 text-blue-700'
+        }`}>
+          {submitStatus.message}
+        </div>
+      )}
+
+      <button 
+        type="submit" 
+        className="bg-[#1F458E] text-white px-6 py-2 rounded hover:bg-[#173779] transition w-full md:w-auto"
+        disabled={submitStatus.status === 'loading'}
+      >
+        {submitStatus.status === 'loading' ? t('recruitment.sending') : t('recruitment.submit')}
       </button>
     </form>
   );
