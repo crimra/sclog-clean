@@ -26,12 +26,15 @@
     "copyright": "©2025 par sOmedia"
   },
   "contact": {
-    "title": "Prenez contact",
-    "intro": "Vous avez un projet en tête ? <br />Nous serions ravis d'en discuter avec vous.",
+    "title": "Contactez-nous",
+    "intro": "Nous sommes à votre écoute. N'hésitez pas à nous contacter pour toute question.",
     "name": "Votre nom",
     "email": "Votre email",
     "message": "Votre message",
-    "send": "Envoyer"
+    "send": "Envoyer",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé avec succès",
+    "error": "Une erreur est survenue lors de l'envoi"
   },
   "recruitment": {
     "title": "Formulaire de candidature",
@@ -99,7 +102,10 @@
     "motivation": "Lettre de motivation (optionnelle)",
     "motivationPlaceholder": "Motivation",
     "consent": "J'accepte que mes données soient utilisées dans le cadre de ce recrutement.",
-    "submit": "📨 Envoyer ma candidature"
+    "submit": "📨 Envoyer ma candidature",
+    "sending": "Envoi en cours...",
+    "success": "Votre candidature a été envoyée avec succès",
+    "error": "Une erreur est survenue lors de l'envoi de votre candidature"
   },
   "hero": {
     "main": "Votre partenaire logistique pétrolière au Congo",
@@ -249,5 +255,5 @@
   },
   "news": {
     "coming_soon": "Ne manquez pas nos prochaines actualités, en ligne très bientôt !"
-}
+  }
 }
