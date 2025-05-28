@@ -68,7 +68,7 @@ const RecruitmentForm = () => {
         <div>
           <label>{t('recruitment.maritalStatus')}</label>
           <select name="maritalStatus" required value={formData.maritalStatus} onChange={handleChange} className="w-full p-2 border rounded">
-            <option value="">{t('recruitment.maritalStatusOptions.""')}</option>
+            <option value="select">{t('recruitment.maritalStatusOptions.select')}</option>
             <option value="single">{t('recruitment.maritalStatusOptions.single')}</option>
             <option value="married">{t('recruitment.maritalStatusOptions.married')}</option>
             <option value="divorced">{t('recruitment.maritalStatusOptions.divorced')}</option>
@@ -173,7 +173,7 @@ const RecruitmentForm = () => {
       <div>
         <label>{t('recruitment.hasLicense')}</label>
         <select name="hasLicense" value={formData.hasLicense} onChange={handleChange} className="w-full p-2 border rounded">
-          <option value="">{t('recruitment.hasLicenseOptions.""')}</option>
+          <option value="select">{t('recruitment.hasLicenseOptions.select')}</option>
           <option value="yes">{t('recruitment.hasLicenseOptions.yes')}</option>
           <option value="no">{t('recruitment.hasLicenseOptions.no')}</option>
         </select>

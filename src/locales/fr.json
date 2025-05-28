@@ -39,7 +39,7 @@
     "birthdate": "Date de naissance",
     "maritalStatus": "Statut matrimonial",
     "maritalStatusOptions": {
-      "": "-- Sélectionner --",
+      "select": "-- Sélectionner --",
       "single": "Célibataire",
       "married": "Marié(e)",
       "divorced": "Divorcé(e)"
@@ -91,7 +91,7 @@
     },
     "hasLicense": "Avez-vous un permis de conduire ?",
     "hasLicenseOptions": {
-      "": "-- Sélectionner --",
+      "select": "-- Sélectionner --",
       "yes": "Oui",
       "no": "Non"
     },

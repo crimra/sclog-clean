@@ -39,7 +39,7 @@
     "birthdate": "Birth date",
     "maritalStatus": "Marital status",
     "maritalStatusOptions": {
-      "": "-- Select --",
+      "select": "-- Select --",
       "single": "Single",
       "married": "Married",
       "divorced": "Divorced"
@@ -71,14 +71,14 @@
     },
     "contractType": "Contract type",
     "contractTypeOptions": {
-      "": "-- Select --",
+      "select": "-- Select --",
       "cdi": "Permanent",
       "cdd": "Fixed-term",
       "intern": "Internship"
     },
     "availability": "Availability",
     "availabilityOptions": {
-      "": "-- Select --",
+      "select": "-- Select --",
       "immediate": "Immediate",
       "1month": "1 month",
       "other": "Other"
@@ -91,7 +91,7 @@
     },
     "hasLicense": "Do you have a driving license?",
     "hasLicenseOptions": {
-      "": "-- Select --",
+      "select": "-- Select --",
       "yes": "Yes",
       "no": "No"
     },
