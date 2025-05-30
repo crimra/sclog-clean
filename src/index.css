@@ -976,9 +976,11 @@ footer .bottom {
 .horizontal-gallery {
   display: flex;
   gap: 10px;
-  overflow-x: auto;
+  overflow-x: scroll;
   max-width: 400px;
   padding-bottom: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #1F458E #fff;
 }
 
 .horizontal-gallery img,
