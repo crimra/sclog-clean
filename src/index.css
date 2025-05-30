@@ -1048,11 +1048,32 @@ footer .bottom {
   opacity: 0;
 }
 
+.chart img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .chart.animate {
   opacity: 1;
   transform: translateY(0);
 }
 
+
+@media (max-width: 768px) {
+  .chart {
+    width: 100%;
+    height: auto;
+  }
+
+  .action{
+    margin: 2rem auto;
+  }
+
+  .qhse{
+    padding: 2rem auto;
+  }
+}
 
 /* End Action */
 
@@ -2091,17 +2112,18 @@ nav ul li a {
   .join1,
   .projects{
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 3rem 2rem;
   }
 
    .qhse .title1,
    .qhse .title2, 
    .qhse .qhse-elements {
-    margin: 0;
+    margin: 0; 
    }
 
    .title2{
     width: 90%;
+    padding: 1rem 0; 
    }
 }
 
